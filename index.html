@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Interaction Prototyping</title>
+
     <!-- use bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -23,6 +25,13 @@
             height:70px;
             right:1em;
         }
+		/*exercise sheets*/
+		h2 {
+			page-break-before: always;
+		}
+		h2:first-of-type {
+			page-break-before:avoid;
+		}
         /*number tasks*/
         body {
             counter-reset: tasks;
@@ -40,61 +49,67 @@
             color:rgb(87,164,218);
         }
         /*images*/
+		img {
+			page-break-inside: avoid;
+		}
         img.small {
             width:800px;
             margin:auto;
         }
     </style>
     <script>
-        year = (new Date()).getFullYear();
-        month = ; 
-        if ((new Date()).getMonth() > 2) {
-            term = "summer term " + year;
+        var year = (new Date()).getFullYear();
+		var month = (new Date()).getMonth();
+        if (month < 3) {
+			term = "winter term " + (year-1) + "/" + year;
+        } else if (month > 8) {
+ 			term = "winter term " + year + "/" + (year+1)           
         } else {
-            term = "winter term " + year + "/" + (year+1);
-        }
+            term = "summer term " + year;
+		}
+		document.title = "Interaction Prototyping: " + term;
     </script>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
     <div class="container">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+        
+            <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img alt="Institute of Ergonomics" style="height:100%; display:inline-block;" src="images/LfE.png"> Interaction Prototyping</a>
+            </div> 
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav" role="tablist">
+                <li class="active"><a href="#introduction">Introduction</a></li>
+                <li><a href="#preparation">Get Ready</a></li>
+                  <li><a href="#first">1<sup>st</sup></a></li>
+                  <li><a href="#second">2<sup>nd</sup></a></li>
+                  <li><a href="#third">3<sup>rd</sup></a></li>
+                  <li><a href="#fourth">4<sup>th</sup></a></li>
+                  <li><a href="#fifth">5<sup>th</sup></a></li>
+                  <li><a href="#annex">Annex</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-    <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img alt="Institute of Ergonomics" style="height:100%; display:inline-block;" src="images/LfE.png"> Interaction Prototyping</a>
-    </div> 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav" role="tablist">
-        <li class="active"><a href="#introduction">Introduction</a></li>
-        <li><a href="#preparation">Get Ready</a></li>
-          <li><a href="#first">1<sup>st</sup></a></li>
-          <li><a href="#second">2<sup>nd</sup></a></li>
-          <li><a href="#third">3<sup>rd</sup></a></li>
-          <li><a href="#fourth">4<sup>th</sup></a></li>
-          <li><a href="#fifth">5<sup>th</sup></a></li>
-          <li><a href="#annex">Annex</a></li>
-        </ul>
-    </div>
-  </div>
-</nav>
-    </div>
-    <div class="page-header">
-        <img alt="Institute of Ergonomics" src="images/LfE.png">
-        <h1>Interaction Prototyping <small><script>document.write(term);</script></small></h1>
-        This practical course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische Universität München</a> in the context of master courses in <em>Human Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em>.
-    </div>
+
     
     <!--
     INTRODUCTION
     -->
     <h2 id="introduction">Introduction</h2>
+    <p>This is the practical team assignment for the course<strong> Interaction Prototyping</strong> (practical course taught at the Institute of Ergonomics, Technische Universität München) in the 
+      <script>document.write(term);</script>
+      . This document is optimized for being printed in Chrome.</p>
     <p>The team project aims to freely design and prototype an <b>interactive mobile application</b> in HTML/CSS/JavaScript. Functionalities can freely and independently be designed by your team, depending on your creativity in brainstorming, the gathered user and usability requirements, as well as your use cases and scenarios. The user will be able to perform interactions, for example: buying, listing, viewing, informing, playing, searching.</p>
     <p><b>N.B.:</b> The course focuses on interaction <b>prototyping</b>. Even if your required/specified <em>feature</em> is not fully functional, you can simulate it and work on evaluating the corresponding <em>user interface.</em></p>
     <h4>General Information on the Practical Course:</h4>
@@ -105,7 +120,7 @@
     </ul>
     <h4>Expectations, Requirements, and Grading:</h4>
     <div class="well">Your final grade will consist of a <b>methodological  presentation (50%)</b> and an <b>audit of your prototype (50%)</b> </div>
-    <p>The <b>methods part</b> (i.e. the presentation) depict your correct application of appropriate usability engineering methods. Do not only apply methods that have been presented or mentioned in class, rather read on and involve other methods you know or have read about. There are not “correct” or “incorrect” methods, so document the reasons for selecting or disregarding specific ones (both in your milestone and poster presentations). Document the results and insights they provided. The maximum credits can be reached based on the following expectations (in descending importance):</p>
+    <p>The <b>methods part</b> (i.e. the presentation) depict your correct application of appropriate <strong>usability engineering methods</strong>. Do not only apply methods that have been presented or mentioned in class, rather read on and involve other methods you know or have read about. There are not “correct” or “incorrect” methods, so document the reasons for selecting or disregarding specific ones (both in your milestone and poster presentations). Document the results and insights they provided. The maximum credits can be reached based on the following expectations (in descending importance):</p>
     <dl>
         <dt>Methodology</dt>
         <dd>The prototyping process is performed using a very structured approach. The choice of usability and user centered design methods are clearly motivated and correctly applied. More than the given methods were used. Iterations of the process phases are clearly visible.</dd>
@@ -118,7 +133,7 @@
         <dt>Tools</dt>
         <dd>Various and multiple prototyping tools (paper, software) are used. The different provided tools are used appropriately.</dd>
     </dl>
-    <p>The <b>prototyping part</b> (i.e. the code audit) of your grade will consist of the assessed functionality and interactive behavior of your prototype. The maximum credits can be reached based on the following expectations (in descending importance):</p>
+    <p>The <b>prototyping part</b> (i.e. the code audit) of your grade will consist of the assessed <strong>functionality and interactive behavior of your prototype</strong>. The maximum credits can be reached based on the following expectations (in descending importance):</p>
     <dl>
         <dt>Techniques</dt>
         <dd>There is a very clean HTML structure. CSS is used accurately. The app stays on one page. The prototype relies heavily on JS and jQuery or other JS frameworks. Data is stored in objects. Interface components or APIs are used. Code is structured, reused and commented.</dd>
@@ -135,7 +150,7 @@
     -->
     <h2 id="preparation">Get Ready</h2>
     <h3>Join Mendeley and the Interaction Prototyping Group</h3>
-    tbd
+    The literature presented in class is available in the Mendeley <a href="https://www.mendeley.com/groups/6954121/interaction-prototyping/">Interaction Prototyping Group</a>, which you should join. There is a <a href="https://www.mendeley.com/download-mendeley-desktop">desktop client </a>of Mendeley. Many of the papers and books are available online inside the university network, please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.
     <h3>Join GitHub and your Team Repository</h3>
     <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
     <ol>
@@ -157,7 +172,7 @@
     
     <h4>Stages and commands of GitHub</h4>
     <p>Git is separated into four levels: <b>workspace/ working directory</b>, <b>index</b>, <b>local repository</b>, and <b>online repository</b>. The Git commands allow to organize these four levels to realize the high functionality of Git. A few important commands are explained in the following graphic.</p>
-    <img src="images/git-stages.svg" class="img-responsive" alt="Git stages">
+    <img src="images/github/git-stages.svg" class="img-responsive" alt="Git stages">
     <h4>Workspaces, Branches, Index, History, Repository</h4>
     <p>The following list briefly explains the concepts. Items marked with <sup>*</sup> are the levels, we're going to work with during the course.</p>
     <dl>
@@ -199,11 +214,19 @@
     <p>You’ll now find your local repository overview in the left menu:</p>
     <img alt="local repository" class="img-responsive small" src="images/github/local-repo.png">
     <p>This shelters all the additional functionalities, which GitHub provides. For example, you can now start editing the files in your working directory. Therefore right-click the repository and select <kbd>Open in Explorer</kbd>. There you can add files or edit the existing ones.</p>
-    <p>Whenever a file is modified, you can create a commit (“snapshot” of your current project state). The GitHub client recognizes and summarizes the changes:</p>
+    <p>Whenever a file is modified, you can create a commit (“snapshot” of your current project state). The GitHub client recognizes and summarizes the changes in the area &quot;uncommitted changes&quot;, in the right area you will see all the changes in the files (and their differing content):</p>
+
     <img alt="committing changes" src="images/github/commiting-changes.png" class="img-responsive small">
+
     <p>You simply need to enter some text which describes your modifications (important for your teammates, e.g. “Functionality X improved” or “Bug Y fixed”) and press the commit button: <img src="images/github/github-icon-commit.png" alt="commit button"></p>
     <p>Before your edit appears online, you also need to push your changes from your local repository to the online repository. Instead of pushing/pulling, GitHub offers a synchronization of the online and local repositories. Simply press the corresponding button: <img src="images/github/github-icon-sync.png" alt="sync"></p>
+    <p>You  can explore the different revisions (or &ldquo;snapshots&rdquo;) by clicking the different  commits in your history. There you get a view of the differences (added/removed code for each file) and  the possibility of reverting changes:</p>
+    <p><img alt="reverting changes" src="images/github/revert.jpg" class="img-responsive small"></p>
+    <p>Imagine you made a commit in the past and later on in your project you realize: this was not, what you wanted to do. Git simply gives you the possibility, to revert a single commit in the past:
+      Select the commit, you want to revert (in the history).
+      Press the <img src="images/github/github-icon-revert.png" alt="github revert icon"> button (this is only possible, if all pending changes where committed), you  now have to commit/sync the revert. </p>
     <h2 id="first">First Iteration</h2>
+<<<<<<< HEAD
    
     <h3>Brainstorm for an interactive mobile application</h3>
     <h4>Assignment</h4>
@@ -225,9 +248,15 @@
     
     
     
+=======
+    
+    <h3>Blabla</h3>
+    <h3>Blabla</h3>
+>>>>>>> origin/gh-pages
     <h2 id="second">Second Iteration</h2>
   
     <h3>Blabla</h3>
+</div>
 </body>
 
 </html>
