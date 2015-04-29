@@ -162,7 +162,7 @@
     <h2 id="preparation">Get Ready</h2>
     <h3>Join Mendeley and the Interaction Prototyping group</h3>
     <p>The literature presented in class is available in the Mendeley <a href="https://www.mendeley.com/groups/6954121/interaction-prototyping/">Interaction Prototyping group</a>, which you should join. There is a <a href="https://www.mendeley.com/download-mendeley-desktop">desktop client </a>of Mendeley. </p>
-    <p class="well well-sm"><img src="images/tum.png"> Many of the papers and books are available online (inside the university network). Please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.</p>
+    <p class="well well-sm"><img alt="TUM" src="images/tum.png"> Many of the papers and books are available online (inside the university network). Please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.</p>
     <h3>Join GitHub and your team repository</h3>
     <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
     <ol>
@@ -222,7 +222,7 @@
         <dd>The roll-back action reverts all changes that were committed after the selected commit. <span class="text-danger">This is not reversible!</span></dd>
     </dl>
     <h4>The GitHub client - a graphical user interface for Git</h4>
-    <p>After installing and logging in to GitHub, you are ready to work with the Windows/Mac Client of GitHub. To advance the usability of working with Git as online cloud memory with several addons, you usually won’t need any commands in this GUI. Below you‘ll find some views of the GitHub GUI in different modes. Start by cloning (press the <img src="images/github/github-icon-plus.PNG"> icon) your group’s online repository and choose a folder, where you want your local workspace to be. </p>
+    <p>After installing and logging in to GitHub, you are ready to work with the Windows/Mac Client of GitHub. To advance the usability of working with Git as online cloud memory with several addons, you usually won’t need any commands in this GUI. Below you‘ll find some views of the GitHub GUI in different modes. Start by cloning (press the <img alt="github-plus" src="images/github/github-icon-plus.PNG"> icon) your group’s online repository and choose a folder, where you want your local workspace to be. </p>
     <p>You’ll now find your local repository overview in the left menu:</p>
     <img alt="local repository" class="img-responsive small" src="images/github/local-repo.png">
     <p>This shelters all the additional functionalities, which GitHub provides. For example, you can now start editing the files in your working directory. Therefore right-click the repository and select <kbd>Open in Explorer</kbd>. There you can add files or edit the existing ones.</p>
@@ -239,11 +239,11 @@
       Press the <img src="images/github/github-icon-revert.png" alt="github revert icon"> button (this is only possible, if all pending changes where committed), you  now have to commit/sync the revert. </p>
     <p>If two (or more) persons modified a file simultaneously, this will result in a conflict which you need to resolve by merging. Github will amend the conflicting file with conflict markers: The marker for a starting conflict is<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, while the end of the conflict is marked with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. The two versions are separated by <code>=======</code>. Open the conflicting document with an editor of your choice (e.g. Brackets) and resolve the conflict by deleting the unwanted version and the markers. A file could look like this: </p>
     <pre>
-<<<<<<< HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 Here is your change
 =======
 Here is another conflicting change
->>>>>>> origin/gh-pages
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/gh-pages
    </pre>
     <p>Once you resolved the conflict, commit the merged file (don't forget to select it by clicking <img src="images/github/github-icon-select.png" alt="select in GitHub"> in the "Files to commit" area).</p>
     <h4>The branches</h4>
@@ -269,12 +269,15 @@ Here is another conflicting change
     <ol>
       <li> Go to your project repository: <a href="https://github.com/interactionprototyping">https://github.com/interactionprototyping/GROUP</a> (where GROUP is your group's chosen name)</li>
       <li>Create a <code>gh-pages</code> branch, which is used to publish your site:<br/><img src="images/github/github-create-branch.png" alt="create branch" class="img-responsive"></li>
-      <li>Make <code>gh-pages</code> your default branch (go to <img src="images/github/github-settings.png">, right side): <img src="images/github/github-default-branch.png"></li>
+      <li>Make <code>gh-pages</code> your default branch (go to <img alt="github settings" src="images/github/github-settings.png">, right side): <img alt="github default branch" src="images/github/github-default-branch.png"></li>
       <li>The files, you commit to this  branch, are published under <a href="http://interactionprototyping.github.io/GROUP/FILE.html">http://interactionprototyping.github.io/GROUP/FILE.html</a> (where GROUP is your group name and  FILE the filename of the document you committed). <strong>Convention</strong>: If you name your application&rsquo;s starting page  <code>index.html</code>, you don&rsquo;t need to enter a filename in your browser: typing <a href="http://interactionprototyping.github.io/GROUP">http://interactionprototyping.github.io/GROUP</a> will then be enough.
       </li>
-      <li>You can access<a href="#_ftn1" name="_ftnref1" title=""> </a> these files in your phone&rsquo;s browser. Wait five minutes for the first usage  after setting up <code>gh-pages</code>.</li>
+      <li>You can access these files in your phone&rsquo;s browser. Wait five minutes for the first usage  after setting up <code>gh-pages</code>.</li>
       </ol>
-    <p class="well well-sm"><img src="images/tum.png"> You can use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting up eduroam</a>!</p>
+    <p class="well well-sm"><img alt="TUM" src="images/tum.png"> You can use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting up eduroam</a>!</p>
+        
+<h3 class="todo">Literature research</h3>
+<p class="todo"><b>SOMETHING ABOUT READING AND SUMMARIZE!!!!!!!!!!!!</b></p>
 
 <h2 id="first">First Iteration</h2>
 
@@ -327,18 +330,18 @@ Here is another conflicting change
     <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document and summarize the results of your interviews in the GitHub master branch.</p>
     
     <h3>Design: Personas and user scenarios</h3>
-    <p>Read  chapters five and six on modeling users by personas and scenarios in <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper (2007)</a>: <a href="http://proquest.tech.safaribooksonline.de/9780470084113"><em>About Face 3</em></a> (full text accessible via Safari Books). Develop three  personas and write user scenarios (narrative) in which the personas use your  mobile app. Sometimes it helps to think about the scenario as &ldquo;a day in the  life&rdquo; of the persona.</p>
+    <p>Read  chapters five and six on modeling users by personas and scenarios in <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper (2007)</a>: <a href="http://proquest.tech.safaribooksonline.de/9780470084113"><em>About Face 3</em></a> (full text accessible via Safari Books). Develop three personas and write user scenarios (narrative) in which the personas use your  mobile app. Sometimes it helps to think about the scenario as &ldquo;a day in the  life&rdquo; of the persona.</p>
 <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document your personas and scenarios in the GitHub master branch.</p>
 <h3>Implementation: Early stage prototype</h3>
 <p>According to Nielsen's (2012) <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/"><em>Usability 101</em></a>, create <strong>sketched</strong> early stage vertical  prototypes <strong>on paper</strong> of (more than five) different views of your interactive application that address your analysis and design stages. </p>
 <p>Apply design principles (see slides; <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper, 2007</a>) and Nielsen's (1995) <em><a href="http://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a></em>!</p>
 <h3 class="todo">Evaluation: ???</h3>
-<p>Install the  software <a href="https://popapp.in/">POP - Prototyping on Paper</a> on your iPhones. Take pictures of  your drawn screens and link them to show the interaction. </p>
+<p>Install the  software <a href="https://popapp.in/">POP - Prototyping on Paper</a> on your smartphone. Take pictures of  your drawn screens and link them to show the interaction. </p>
 <p class="todo">Discuss the interaction in  your group and improve it. </p>
 <h3 id="second">Milestone Presentation I</h3>
 <p>You will  demonstrate your methodological findings and your early stage prototypes in 20  minutes during the next Interaction Prototyping session<em></em>. Prepare a <strong>short presentation</strong> on your approach and the corresponding results covering all the work done in the first iteration.</p>
 <p>Don&rsquo;t necessarily proceed  task-by-task, but rather tell a methodological story (why have you chosen certain methods, techniques or tools) following a thread. Demonstrate  the work in progress and formulate questions, you can discuss with the experts  in the plenary.</p>
-<p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>milestone-1</code>on the GitHub master branch. Bring your iPhone with the POP app for the presentation (we'll connect it to a screen).</p>
+<p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>milestone-1</code>on the GitHub master branch. Bring your smartphone with the POP app for the presentation (we'll connect it to a screen).</p>
 <h2>Second Iteration</h2>
   
     <h3>Analysis: Requiremens and Usability Goals</h3>
