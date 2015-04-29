@@ -14,25 +14,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <style type="text/css">
         body {
-            padding-top:50px;
+            padding-top: 50px;
         }
         /*headline*/
         div.page-header {
-            position:relative;
-            padding-right:150px;
+            position: relative;
+            padding-right: 150px;
         }
         div.page-header img {
-            position:absolute;
-            height:70px;
-            right:1em;
+            position: absolute;
+            height: 70px;
+            right: 1em;
         }
-		/*exercise sheets*/
-		h2 {
-			page-break-before: always;
-		}
-		h2:first-of-type {
-			page-break-before:avoid;
-		}
+        /*exercise sheets*/
+        h2 {
+            page-break-before: always;
+        }
+        h2:first-of-type {
+            page-break-before: avoid;
+        }
         /*number tasks*/
         body {
             counter-reset: tasks;
@@ -44,43 +44,43 @@
         }
         /*definition lists*/
         dd {
-            padding-left:2em; 
+            padding-left: 2em;
         }
         dt {
-            color:rgb(87,164,218);
+            color: rgb(87, 164, 218);
         }
         /*images*/
-		img {
-			page-break-inside: avoid;
-		}
-        img.small {
-            width:800px;
-            margin:auto;
+        img {
+            page-break-inside: avoid;
         }
-		img.half {
-			width:50%;
-			margin:auto;
-		}
-		img.third {
-			width:33%;
-			margin:auto;
-		}
-		/*todo class*/
-		.todo {
-			background-color:yellow;
-		}
+        img.small {
+            width: 800px;
+            margin: auto;
+        }
+        img.half {
+            width: 50%;
+            margin: auto;
+        }
+        img.third {
+            width: 33%;
+            margin: auto;
+        }
+        /*todo class*/
+        .todo {
+            background-color: yellow;
+        }
     </style>
     <script>
         var year = (new Date()).getFullYear();
-		var month = (new Date()).getMonth();
+        var month = (new Date()).getMonth();
         if (month < 3) {
-			term = "winter term " + (year-1) + "/" + year;
+            term = "winter term " + (year - 1) + "/" + year;
         } else if (month > 8) {
- 			term = "winter term " + year + "/" + (year+1)           
+            term = "winter term " + year + "/" + (year + 1)
         } else {
             term = "summer term " + year;
-		}
-		document.title = "Interaction Prototyping: " + term;
+        }
+        document.title = "Interaction Prototyping: " + term;
     </script>
 
 </head>
@@ -88,267 +88,303 @@
 <body data-spy="scroll" data-target="#navbar">
     <div class="container">
         <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-        
-            <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img alt="Institute of Ergonomics" style="height:100%; display:inline-block;" src="images/LfE.png"> Interaction Prototyping</a>
-            </div> 
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="nav navbar-nav" role="tablist">
-                <li class="active"><a href="#introduction">Introduction</a></li>
-                <li><a href="#preparation">Get Ready</a></li>
-                  <li><a href="#first">1<sup>st</sup></a></li>
-                  <li><a href="#second">2<sup>nd</sup></a></li>
-                  <li><a href="#third">3<sup>rd</sup></a></li>
-                  <li><a href="#fourth">4<sup>th</sup></a></li>
-                  <li><a href="#fifth">5<sup>th</sup></a></li>
-                  <li><a href="#annex">Annex</a></li>
-              </ul>
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Institute of Ergonomics" style="height:100%; display:inline-block;" src="images/LfE.png">Interaction Prototyping</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav" role="tablist">
+                        <li class="active"><a href="#introduction">Introduction</a>
+                        </li>
+                        <li><a href="#preparation">Get Ready</a>
+                        </li>
+                        <li><a href="#first">1<sup>st</sup></a>
+                        </li>
+                        <li><a href="#second">2<sup>nd</sup></a>
+                        </li>
+                        <li><a href="#third">3<sup>rd</sup></a>
+                        </li>
+                        <li><a href="#fourth">4<sup>th</sup></a>
+                        </li>
+                        <li><a href="#fifth">5<sup>th</sup></a>
+                        </li>
+                        <li><a href="#annex">Annex</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </nav>
 
 
-    
-    <!--
+
+        <!--
     INTRODUCTION
     -->
-    <h2 id="introduction">Introduction</h2>
-    <p>This is the practical team assignment for the course<strong> Interaction Prototyping</strong>. The practical course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische Universität München</a> in the context of master courses in <em>Human Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em> in the <script>document.write(term);</script>. This document is optimized for being printed in Chrome.</p>
-    <p>The team project aims to freely design and prototype an <b>interactive mobile application</b> in HTML/CSS/JavaScript. Functionalities can freely and independently be designed by your team, depending on your creativity in brainstorming, the gathered user and usability requirements, as well as your use cases and scenarios. The user will be able to perform interactions, for example: buying, listing, viewing, informing, playing, searching.</p>
-    <p><b>N.B.:</b> The course focuses on interaction <b>prototyping</b>. Even if your required/specified <em>feature</em> is not fully functional, you can simulate it and work on evaluating the corresponding <em>user interface.</em></p>
-    <h4>General information on the practical course:</h4>
-    <ul>
-        <li>All the tasks during this project phase will be <b>group exercises</b> (groups of two to three persons). We recommend that every team member practices and contributes to the implementation part of the exercises. Establish interdisciplinary teams for working on your prototype. Find a name four your group.</li>
-        <li><b>Document your implementational and methodological progress/process</b> throughout the whole project in a suitable manner (beginning at the first iteration) on GitHub. This will simplify the final project presentation. By using the history functionality of GitHub, you may return to earlier versions of your prototype.</li>
-        <li>Each of the five iterations is planned for a <b>duration of two weeks.</b> Please ensure that you have pushed solutions for all exercises to GitHub at the end of the iteration. Your repository will be <a href="https://github.com/interactionprototyping">https://github.com/interactionprototyping/GROUP</a>, where GROUP is your group's chosen name. Set up a suitable file and folder structure; please indicate in the README.md, where your current version of your prototype can be found.</li>
-    </ul>
-    <h4>Expectations, requirements, and grading:</h4>
-    <div class="well"><i class="fa fa-info"></i> Your final grade will consist of a <b>methodological  presentation (50%)</b> and an <b>audit of your prototype (50%)</b> </div>
-    <p>The <b>methods part</b> (i.e. the presentation) depict your correct application of appropriate <strong>usability engineering methods</strong>. Do not only apply methods that have been presented or mentioned in class, rather read on and involve other methods you know or have read about. There are not “correct” or “incorrect” methods, so document the reasons for selecting or disregarding specific ones (both in your milestone and poster presentations). Document the results and insights they provided. The maximum credits can be reached based on the following expectations (in descending importance):</p>
-    <dl>
-        <dt>Methodology</dt>
-        <dd>The prototyping process is performed using a very structured approach. The choice of usability and user centered design methods are clearly motivated and correctly applied. More than the given methods were used. Iterations of the process phases are clearly visible.</dd>
-        <dt>Results</dt>
-        <dd>The selected evaluation outcomes are important and presented in a structured and clear way. The outcome of the evaluation is linked to concrete design improvements of the prototype. The prototypical results are discussed using the usability requirements that were created in the early stages of the process according to appropriate criteria. Both prototype results and evaluation outcomes are critically discussed.</dd>
-        <dt>Creativity</dt>
-        <dd>The developed prototype is intellectual independent, innovative and original.</dd>
-        <dt>References</dt>
-        <dd>The design and methodology choices are supported using literature (i.e. correct sources of the methods that have been applied), appropriate guidelines, design rules, or design patterns.</dd>
-        <dt>Tools</dt>
-        <dd>Various and multiple prototyping tools (paper, software) are used. The different provided tools are used appropriately.</dd>
-    </dl>
-    <p>The <b>prototyping part</b> (i.e. the code audit) of your grade will consist of the assessed <strong>functionality and interactive behavior of your prototype</strong>. The maximum credits can be reached based on the following expectations (in descending importance):</p>
-    <dl>
-        <dt>Techniques</dt>
-        <dd>There is a very clean HTML structure. CSS is used accurately. The app stays on one page. The prototype relies heavily on JS and jQuery or other JS frameworks. Data is stored in objects. Interface components or APIs are used. Code is structured, reused and commented.</dd>
-        <dt>Usability</dt>
-        <dd>The prototype follows (not only the established) usability, readability and clarity rules (heuristics, patterns and guidelines). No usability bugs are present and found in the code audit.</dd>
-        <dt>Functionality</dt>
-        <dd>Basic established use-cases (e.g., in case of a music app, playing any song in the library, or compiling arbitrary playlists), are functional.</dd>
-        <dt>Level of Detail</dt>
-        <dd>The created interaction allows a high (horizontal or vertical) prototypical capability. More than the tested experimental paths are implemented. "Experiencing" the app is possible in all program sections.</dd>
-    </dl>
-    
-    <!--
+        <h2 id="introduction">Introduction</h2>
+        <p>This is the practical team assignment for the course<strong> Interaction Prototyping</strong>. The practical course is taught at the <a href="http://www.lfe.mw.tum.de/">Institute of Ergonomics</a> of the <a href="http://www.tum.de/">Technische Universität München</a> in the context of master courses in <em>Human Factors Engineering</em>, <em>Mechanical Engineering</em>, and <em>Computer Sciences</em> in the
+            <script>
+                document.write(term);
+            </script>. This document is optimized for being printed in Chrome.</p>
+        <p>The team project aims to freely design and prototype an <b>interactive mobile application</b> in HTML/CSS/JavaScript. Functionalities can freely and independently be designed by your team, depending on your creativity in brainstorming, the gathered user and usability requirements, as well as your use cases and scenarios. The user will be able to perform interactions, for example: buying, listing, viewing, informing, playing, searching.</p>
+        <p><b>N.B.:</b> The course focuses on interaction <b>prototyping</b>. Even if your required/specified <em>feature</em> is not fully functional, you can simulate it and work on evaluating the corresponding <em>user interface.</em>
+        </p>
+        <h4>General information on the practical course:</h4>
+        <ul>
+            <li>All the tasks during this project phase will be <b>group exercises</b> (groups of two to three persons). We recommend that every team member practices and contributes to the implementation part of the exercises. Establish interdisciplinary teams for working on your prototype. Find a name four your group.</li>
+            <li><b>Document your implementational and methodological progress/process</b> throughout the whole project in a suitable manner (beginning at the first iteration) on GitHub. This will simplify the final project presentation. By using the history functionality of GitHub, you may return to earlier versions of your prototype.</li>
+            <li>Each of the five iterations is planned for a <b>duration of two weeks.</b> Please ensure that you have pushed solutions for all exercises to GitHub at the end of the iteration. Your repository will be <a href="https://github.com/interactionprototyping">https://github.com/interactionprototyping/GROUP</a>, where GROUP is your group's chosen name. Set up a suitable file and folder structure; please indicate in the README.md, where your current version of your prototype can be found.</li>
+        </ul>
+        <h4>Expectations, requirements, and grading:</h4>
+        <div class="well"><i class="fa fa-info"></i> Your final grade will consist of a <b>methodological  presentation (50%)</b> and an <b>audit of your prototype (50%)</b> 
+        </div>
+        <p>The <b>methods part</b> (i.e. the presentation) depict your correct application of appropriate <strong>usability engineering methods</strong>. Do not only apply methods that have been presented or mentioned in class, rather read on and involve other methods you know or have read about. There are not “correct” or “incorrect” methods, so document the reasons for selecting or disregarding specific ones (both in your milestone and poster presentations). Document the results and insights they provided. The maximum credits can be reached based on the following expectations (in descending importance):</p>
+        <dl>
+            <dt>Methodology</dt>
+            <dd>The prototyping process is performed using a very structured approach. The choice of usability and user centered design methods are clearly motivated and correctly applied. More than the given methods were used. Iterations of the process phases are clearly visible.</dd>
+            <dt>Results</dt>
+            <dd>The selected evaluation outcomes are important and presented in a structured and clear way. The outcome of the evaluation is linked to concrete design improvements of the prototype. The prototypical results are discussed using the usability requirements that were created in the early stages of the process according to appropriate criteria. Both prototype results and evaluation outcomes are critically discussed.</dd>
+            <dt>Creativity</dt>
+            <dd>The developed prototype is intellectual independent, innovative and original.</dd>
+            <dt>References</dt>
+            <dd>The design and methodology choices are supported using literature (i.e. correct sources of the methods that have been applied), appropriate guidelines, design rules, or design patterns.</dd>
+            <dt>Tools</dt>
+            <dd>Various and multiple prototyping tools (paper, software) are used. The different provided tools are used appropriately.</dd>
+        </dl>
+        <p>The <b>prototyping part</b> (i.e. the code audit) of your grade will consist of the assessed <strong>functionality and interactive behavior of your prototype</strong>. The maximum credits can be reached based on the following expectations (in descending importance):</p>
+        <dl>
+            <dt>Techniques</dt>
+            <dd>There is a very clean HTML structure. CSS is used accurately. The app stays on one page. The prototype relies heavily on JS and jQuery or other JS frameworks. Data is stored in objects. Interface components or APIs are used. Code is structured, reused and commented.</dd>
+            <dt>Usability</dt>
+            <dd>The prototype follows (not only the established) usability, readability and clarity rules (heuristics, patterns and guidelines). No usability bugs are present and found in the code audit.</dd>
+            <dt>Functionality</dt>
+            <dd>Basic established use-cases (e.g., in case of a music app, playing any song in the library, or compiling arbitrary playlists), are functional.</dd>
+            <dt>Level of Detail</dt>
+            <dd>The created interaction allows a high (horizontal or vertical) prototypical capability. More than the tested experimental paths are implemented. "Experiencing" the app is possible in all program sections.</dd>
+        </dl>
+
+        <!--
     PREPARATION
     -->
-    <h2 id="preparation">Get Ready</h2>
-    <h3>Join Mendeley and the Interaction Prototyping group</h3>
-    <p>The literature presented in class is available in the Mendeley <a href="https://www.mendeley.com/groups/6954121/interaction-prototyping/">Interaction Prototyping group</a>, which you should join. There is a <a href="https://www.mendeley.com/download-mendeley-desktop">desktop client </a>of Mendeley. </p>
-    <p class="well well-sm"><img alt="TUM" src="images/tum.png"> Many of the papers and books are available online (inside the university network). Please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.</p>
-    <h3>Join GitHub and your team repository</h3>
-    <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
-    <ol>
-        <li><a href="https://github.com/join">Create free GitHub account</a></li>
-        <li>Send your <b>user names</b> and your group's <b>chosen name</b> to <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a></li>
-        <li>You will be given access to the repository <a href="https://github.com/interactionprototyping/">https://github.com/interactionprototyping/GROUP</a>, where GROUP is your chosen name.</li>
-        <li>Download and install the <a href="https://windows.github.com/">Windows</a> or <a href="https://mac.github.com/">Mac</a> client.</li>
-        <li>Clone the <code>gh-pages</code> branch of your repository. Find instructions on this below.</li>
-    </ol>
-  
-    <h4>GitHub benefits</h4>
-    <p>GitHub is an online cloud service (online storage) which simplifies collaboration in IT projects. It is based on the software Git. The combination provides tools for solving conflicted versions of a file, merging different edits in the same document and backing up your project.</p>
-    <p>The benefits of GitHub are threefold:</p>
-    <ul>
-        <li><b>Version control</b> (all code revisions are stored, you can jump back)</li>
-        <li><b>Collaboration</b> (your team can work together on the code)</li>
-        <li><b>Cloud</b> (your app is stored in the internet and can be accessed via smartphones)</li>
-    </ul>
-    
-    <h4>Stages and commands of GitHub</h4>
-    <p>Git is separated into four levels: <b>workspace/ working directory</b>, <b>index</b>, <b>local repository</b>, and <b>online repository</b>. The Git commands allow to organize these four levels to realize the high functionality of Git. A few important commands are explained in the following graphic.</p>
-    <img src="images/github/git-stages.svg" class="img-responsive" alt="Git stages">
-    <h4>Workspaces, branches, index, history, repository</h4>
-    <p>The following list briefly explains the concepts. Items marked with <sup>*</sup> are the levels, we're going to work with during the course.</p>
-    <dl>
-        <dt>Workspace<sup>*</sup></dt>
-        <dd>The workspace is the actual folder on your computer, within you make your modifications.</dd>
-        <dt>History<sup>*</sup></dt>
-        <dd>With the history function of Git and GitHub, it is possible to revert a single commit in the past or to roll back the whole project to a selected point. </dd>
-        <dt>Local &amp; Online Repository<sup>*</sup></dt>
-        <dd>These repositories are the “containers“, where your  project is stored. After all synchronisation, both repositories, online and offline, are all the same.</dd>
-        <dt>Branches</dt>
-        <dd>Working with branches allows to test different versions of one commit. If you are not sure, which possibility might be the best one, you simply set up another branch und implement both versions at the same time. After you made your choice, you have the possibility to merge the commits from the two branches. In order to access your HTML/CSS/JS prototype directly as a www app (contrary to inspecting the code in the www), you need to use the branch <code>gh-pages</code>.</dd>
-        <dt>Index</dt>
-        <dd>As kind of a meta-level, the index isn‘t directly visible or editable. Before commiting your modifications, GitHub creates this index, which will be posted to your local repository.</dd>
-    </dl>
-    <h4>Git commands</h4>
-    <p>The following basic commands are necessary:</p>
-    <dl>
-        <dt>Commit</dt>
-        <dd>Commit a file to bring it under versioning control (you can later revert to this revision or compare differences)</dd>
-        <dt>Push</dt>
-        <dd>Push a file to bring it online (available for other team members)</dd>
-        <dt>Checkout</dt>
-        <dd>Checkout of a file brings it back to your workspace in a certain version (available for inspection and modification)</dd>
-        <dt>Pull</dt>
-        <dd>Pull a file to bring it from the online repository to your local workspace.</dd>
-    </dl>
-    <h4>Advanced GitHub commands</h4>
-    <p>When using the GitHub GUI, you will find several buttons, which  are not classic Git commands. These buttons often unite a few commands to one action that performs a special and necessary task. Again, items marked with <sup>*</sup> are the levels, we're most likely going to work with during the course.</p>
-    <dl>
-        <dt>Sync<sup>*</sup></dt>
-        <dd>The snyc action unites the commands add, commit, push, fetch and checkout. By syncing your local repository, you do load the latest version of the online repo while updating the online version with your commits. </dd>
-        <dt>Revert<sup>*</sup></dt>
-        <dd>The revert action creates a new commit that reverts all changes up to the selected commit (this means, the revert is also revertable).</dd>
-        <dt>Roll-back</dt>
-        <dd>The roll-back action reverts all changes that were committed after the selected commit. <span class="text-danger">This is not reversible!</span></dd>
-    </dl>
-    <h4>The GitHub client - a graphical user interface for Git</h4>
-    <p>After installing and logging in to GitHub, you are ready to work with the Windows/Mac Client of GitHub. To advance the usability of working with Git as online cloud memory with several addons, you usually won’t need any commands in this GUI. Below you‘ll find some views of the GitHub GUI in different modes. Start by cloning (press the <img alt="github-plus" src="images/github/github-icon-plus.PNG"> icon) your group’s online repository and choose a folder, where you want your local workspace to be. </p>
-    <p>You’ll now find your local repository overview in the left menu:</p>
-    <img alt="local repository" class="img-responsive small" src="images/github/local-repo.png">
-    <p>This shelters all the additional functionalities, which GitHub provides. For example, you can now start editing the files in your working directory. Therefore right-click the repository and select <kbd>Open in Explorer</kbd>. There you can add files or edit the existing ones.</p>
-    <p>Whenever a file is modified, you can create a commit (“snapshot” of your current project state). The GitHub client recognizes and summarizes the changes in the area &quot;uncommitted changes&quot;, in the right area you will see all the changes in the files (and their differing content):</p>
+        <h2 id="preparation">Get Ready</h2>
+        <h3>Join Mendeley and the Interaction Prototyping group</h3>
+        <p>The literature presented in class is available in the Mendeley <a href="https://www.mendeley.com/groups/6954121/interaction-prototyping/">Interaction Prototyping group</a>, which you should join. There is a <a href="https://www.mendeley.com/download-mendeley-desktop">desktop client </a>of Mendeley.</p>
+        <p class="well well-sm">
+            <img alt="TUM" src="images/tum.png">Many of the papers and books are available online (inside the university network). Please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.</p>
+        <h3>Join GitHub and your team repository</h3>
+        <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
+        <ol>
+            <li><a href="https://github.com/join">Create free GitHub account</a>
+            </li>
+            <li>Send your <b>user names</b> and your group's <b>chosen name</b> to <a href="mailto:zimmermann@lfe.mw.tum.de">Markus Zimmermann</a>
+            </li>
+            <li>You will be given access to the repository <a href="https://github.com/interactionprototyping/">https://github.com/interactionprototyping/GROUP</a>, where GROUP is your chosen name.</li>
+            <li>Download and install the <a href="https://windows.github.com/">Windows</a> or <a href="https://mac.github.com/">Mac</a> client.</li>
+            <li>Clone the <code>gh-pages</code> branch of your repository. Find instructions on this below.</li>
+        </ol>
 
-    <img alt="committing changes" src="images/github/commiting-changes.png" class="img-responsive small">
+        <h4>GitHub benefits</h4>
+        <p>GitHub is an online cloud service (online storage) which simplifies collaboration in IT projects. It is based on the software Git. The combination provides tools for solving conflicted versions of a file, merging different edits in the same document and backing up your project.</p>
+        <p>The benefits of GitHub are threefold:</p>
+        <ul>
+            <li><b>Version control</b> (all code revisions are stored, you can jump back)</li>
+            <li><b>Collaboration</b> (your team can work together on the code)</li>
+            <li><b>Cloud</b> (your app is stored in the internet and can be accessed via smartphones)</li>
+        </ul>
 
-    <p>You simply need to enter some text which describes your modifications (important for your teammates, e.g. “Functionality X improved” or “Bug Y fixed”) and press the commit button: <img src="images/github/github-icon-commit.png" alt="commit button"></p>
-    <p>Before your edit appears online, you also need to push your changes from your local repository to the online repository. Instead of pushing/pulling, GitHub offers a synchronization of the online and local repositories. Simply press the corresponding button: <img src="images/github/github-icon-sync.png" alt="sync"></p>
-    <p>You  can explore the different revisions (or &ldquo;snapshots&rdquo;) by clicking the different  commits in your history. There you get a view of the differences (added/removed code for each file) and  the possibility of reverting changes:</p>
-    <p><img alt="reverting changes" src="images/github/revert.jpg" class="img-responsive small"></p>
-    <p>Imagine you made a commit in the past and later on in your project you realize: this was not, what you wanted to do. Git simply gives you the possibility, to revert a single commit in the past:
-      Select the commit, you want to revert (in the history).
-      Press the <img src="images/github/github-icon-revert.png" alt="github revert icon"> button (this is only possible, if all pending changes where committed), you  now have to commit/sync the revert. </p>
-    <p>If two (or more) persons modified a file simultaneously, this will result in a conflict which you need to resolve by merging. Github will amend the conflicting file with conflict markers: The marker for a starting conflict is<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, while the end of the conflict is marked with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. The two versions are separated by <code>=======</code>. Open the conflicting document with an editor of your choice (e.g. Brackets) and resolve the conflict by deleting the unwanted version and the markers. A file could look like this: </p>
-    <pre>
+        <h4>Stages and commands of GitHub</h4>
+        <p>Git is separated into four levels: <b>workspace/ working directory</b>, <b>index</b>, <b>local repository</b>, and <b>online repository</b>. The Git commands allow to organize these four levels to realize the high functionality of Git. A few important commands are explained in the following graphic.</p>
+        <img src="images/github/git-stages.svg" class="img-responsive" alt="Git stages">
+        <h4>Workspaces, branches, index, history, repository</h4>
+        <p>The following list briefly explains the concepts. Items marked with <sup>*</sup> are the levels, we're going to work with during the course.</p>
+        <dl>
+            <dt>Workspace<sup>*</sup></dt>
+            <dd>The workspace is the actual folder on your computer, within you make your modifications.</dd>
+            <dt>History<sup>*</sup></dt>
+            <dd>With the history function of Git and GitHub, it is possible to revert a single commit in the past or to roll back the whole project to a selected point.</dd>
+            <dt>Local &amp; Online Repository<sup>*</sup></dt>
+            <dd>These repositories are the “containers“, where your project is stored. After all synchronisation, both repositories, online and offline, are all the same.</dd>
+            <dt>Branches</dt>
+            <dd>Working with branches allows to test different versions of one commit. If you are not sure, which possibility might be the best one, you simply set up another branch und implement both versions at the same time. After you made your choice, you have the possibility to merge the commits from the two branches. In order to access your HTML/CSS/JS prototype directly as a www app (contrary to inspecting the code in the www), you need to use the branch <code>gh-pages</code>.</dd>
+            <dt>Index</dt>
+            <dd>As kind of a meta-level, the index isn‘t directly visible or editable. Before commiting your modifications, GitHub creates this index, which will be posted to your local repository.</dd>
+        </dl>
+        <h4>Git commands</h4>
+        <p>The following basic commands are necessary:</p>
+        <dl>
+            <dt>Commit</dt>
+            <dd>Commit a file to bring it under versioning control (you can later revert to this revision or compare differences)</dd>
+            <dt>Push</dt>
+            <dd>Push a file to bring it online (available for other team members)</dd>
+            <dt>Checkout</dt>
+            <dd>Checkout of a file brings it back to your workspace in a certain version (available for inspection and modification)</dd>
+            <dt>Pull</dt>
+            <dd>Pull a file to bring it from the online repository to your local workspace.</dd>
+        </dl>
+        <h4>Advanced GitHub commands</h4>
+        <p>When using the GitHub GUI, you will find several buttons, which are not classic Git commands. These buttons often unite a few commands to one action that performs a special and necessary task. Again, items marked with <sup>*</sup> are the levels, we're most likely going to work with during the course.</p>
+        <dl>
+            <dt>Sync<sup>*</sup></dt>
+            <dd>The snyc action unites the commands add, commit, push, fetch and checkout. By syncing your local repository, you do load the latest version of the online repo while updating the online version with your commits.</dd>
+            <dt>Revert<sup>*</sup></dt>
+            <dd>The revert action creates a new commit that reverts all changes up to the selected commit (this means, the revert is also revertable).</dd>
+            <dt>Roll-back</dt>
+            <dd>The roll-back action reverts all changes that were committed after the selected commit. <span class="text-danger">This is not reversible!</span>
+            </dd>
+        </dl>
+        <h4>The GitHub client - a graphical user interface for Git</h4>
+        <p>After installing and logging in to GitHub, you are ready to work with the Windows/Mac Client of GitHub. To advance the usability of working with Git as online cloud memory with several addons, you usually won’t need any commands in this GUI. Below you‘ll find some views of the GitHub GUI in different modes. Start by cloning (press the
+            <img alt="github-plus" src="images/github/github-icon-plus.PNG">icon) your group’s online repository and choose a folder, where you want your local workspace to be.</p>
+        <p>You’ll now find your local repository overview in the left menu:</p>
+        <img alt="local repository" class="img-responsive small" src="images/github/local-repo.png">
+        <p>This shelters all the additional functionalities, which GitHub provides. For example, you can now start editing the files in your working directory. Therefore right-click the repository and select <kbd>Open in Explorer</kbd>. There you can add files or edit the existing ones.</p>
+        <p>Whenever a file is modified, you can create a commit (“snapshot” of your current project state). The GitHub client recognizes and summarizes the changes in the area &quot;uncommitted changes&quot;, in the right area you will see all the changes in the files (and their differing content):</p>
+
+        <img alt="committing changes" src="images/github/commiting-changes.png" class="img-responsive small">
+
+        <p>You simply need to enter some text which describes your modifications (important for your teammates, e.g. “Functionality X improved” or “Bug Y fixed”) and press the commit button:
+            <img src="images/github/github-icon-commit.png" alt="commit button">
+        </p>
+        <p>Before your edit appears online, you also need to push your changes from your local repository to the online repository. Instead of pushing/pulling, GitHub offers a synchronization of the online and local repositories. Simply press the corresponding button:
+            <img src="images/github/github-icon-sync.png" alt="sync">
+        </p>
+        <p>You can explore the different revisions (or &ldquo;snapshots&rdquo;) by clicking the different commits in your history. There you get a view of the differences (added/removed code for each file) and the possibility of reverting changes:</p>
+        <p>
+            <img alt="reverting changes" src="images/github/revert.jpg" class="img-responsive small">
+        </p>
+        <p>Imagine you made a commit in the past and later on in your project you realize: this was not, what you wanted to do. Git simply gives you the possibility, to revert a single commit in the past: Select the commit, you want to revert (in the history). Press the
+            <img src="images/github/github-icon-revert.png" alt="github revert icon">button (this is only possible, if all pending changes where committed), you now have to commit/sync the revert.</p>
+        <p>If two (or more) persons modified a file simultaneously, this will result in a conflict which you need to resolve by merging. Github will amend the conflicting file with conflict markers: The marker for a starting conflict is<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, while the end of the conflict is marked with <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. The two versions are separated by <code>=======</code>. Open the conflicting document with an editor of your choice (e.g. Brackets) and resolve the conflict by deleting the unwanted version and the markers. A file could look like this:</p>
+        <pre>
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 Here is your change
 =======
 Here is another conflicting change
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/gh-pages
    </pre>
-    <p>Once you resolved the conflict, commit the merged file (don't forget to select it by clicking <img src="images/github/github-icon-select.png" alt="select in GitHub"> in the "Files to commit" area).</p>
-    <h4>The branches</h4>
-    <p>There is a  concept called <a href="https://guides.github.com/introduction/flow/">&ldquo;branches&rdquo; in GitHub</a>, those are used for allowing a parallel  workflow of multiple application versions in big software projects.  Basically, one would create a copy of the existing application (create a  branch), improve the functionality (without altering the main project branch,  called the master branch), and once the functionality is there, discuss it and  finally merge it to the master branch.</p>
-    <p>For  the interaction prototyping course, it&rsquo;s sufficient if you stay in the <code>master</code> branch (for  private documents like tests,  presentations, evaluation, …) or in the <code>gh-pages</code> branch (for the development of your  application, which then will be publically available in the internet). Keep in mind: the latter branch is publically  available in the internet. You need to select the appropriate branch in the top  bar of your GitHub client: <img src="images/github/github-icon-branch.png" alt="github branch">.</p>
-    <h4>Ready, steady, go!</h4>
-    <p><strong>Find</strong> further information by reading the <a href="https://guides.github.com/">GitHub tutorials</a>. <strong>Create</strong> an arbitrary HTML document in your cloned repository.  Provoke a <strong>conflict</strong>: multiple authors  are editing this HTML document and synchronizing changes. Try to resolve the  conflicts by merging the edits. Try to revert to an earlier version.</p>
-    <div class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Discuss with your tutors:</strong> What  is a commit, a synchronization, and a branch?</div>
-    <h3>Set up the development environment</h3>
-    <h4>The device </h4>
-    <p>Get one <strong>iPhone</strong> (Apple iPhone 4) per team member: for collecting  it in room MW0330, bring your ID card or passport. Each team member needs to  sign the lending!</p>
-    <h4>The environment</h4>
-    <p><strong>Set up</strong> an environment for creating HTML documents on  your computer.</p>
-    <ul>
-      <li>Recommended  Editor: <a href="http://brackets.io/">Brackets</a></li>
-      <li>Recommended  Browser: <a href="https://www.google.com/chrome/">Chrome</a></li>
-    </ul>
-    <p><strong>Create</strong> a HTML page (e.g. the HTML skeleton in the slides)  with some elements (headline, paragraphs …) and <strong>open</strong> it in your browser (<a href="http://www.w3schools.com/html/html_editors.asp">a description of this procedure is available on w3schools</a>).</p>
-    <p>Access the Chrome <strong>developer tools</strong> and inspect the  elements in your document. Activate the device emulation (Apple iPhone 4):</p>
-    <img src="images/device-emulation.png" alt="create branch" class="img-responsive third">
-    <h4>Starting the app</h4>
-    <p> You can now <a href="https://pages.github.com/#project-site">make your HTML accessible via <strong>github.io</strong></a>,  a web server publishing all documents you have in the GitHub branch <code>gh-pages</code>.</p>
-    <ol>
-      <li> Go to your project repository: <a href="https://github.com/interactionprototyping">https://github.com/interactionprototyping/GROUP</a> (where GROUP is your group's chosen name)</li>
-      <li>Create a <code>gh-pages</code> branch, which is used to publish your site:<br/><img src="images/github/github-create-branch.png" alt="create branch" class="img-responsive"></li>
-      <li>Make <code>gh-pages</code> your default branch (go to <img alt="github settings" src="images/github/github-settings.png">, right side): <img alt="github default branch" src="images/github/github-default-branch.png"></li>
-      <li>The files, you commit to this  branch, are published under <a href="http://interactionprototyping.github.io/GROUP/FILE.html">http://interactionprototyping.github.io/GROUP/FILE.html</a> (where GROUP is your group name and  FILE the filename of the document you committed). <strong>Convention</strong>: If you name your application&rsquo;s starting page  <code>index.html</code>, you don&rsquo;t need to enter a filename in your browser: typing <a href="http://interactionprototyping.github.io/GROUP">http://interactionprototyping.github.io/GROUP</a> will then be enough.
-      </li>
-      <li>You can access these files in your phone&rsquo;s browser. Wait five minutes for the first usage  after setting up <code>gh-pages</code>.</li>
-      </ol>
-    <p class="well well-sm"><img alt="TUM" src="images/tum.png"> You can use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting up eduroam</a>!</p>
-        
-<h3 class="todo">Literature research</h3>
-<p class="todo"><b>SOMETHING ABOUT READING AND SUMMARIZE!!!!!!!!!!!!</b></p>
+        <p>Once you resolved the conflict, commit the merged file (don't forget to select it by clicking
+            <img src="images/github/github-icon-select.png" alt="select in GitHub">in the "Files to commit" area).</p>
+        <h4>The branches</h4>
+        <p>There is a concept called <a href="https://guides.github.com/introduction/flow/">&ldquo;branches&rdquo; in GitHub</a>, those are used for allowing a parallel workflow of multiple application versions in big software projects. Basically, one would create a copy of the existing application (create a branch), improve the functionality (without altering the main project branch, called the master branch), and once the functionality is there, discuss it and finally merge it to the master branch.</p>
+        <p>For the interaction prototyping course, it&rsquo;s sufficient if you stay in the <code>master</code> branch (for private documents like tests, presentations, evaluation, …) or in the <code>gh-pages</code> branch (for the development of your application, which then will be publically available in the internet). Keep in mind: the latter branch is publically available in the internet. You need to select the appropriate branch in the top bar of your GitHub client:
+            <img src="images/github/github-icon-branch.png" alt="github branch">.</p>
+        <h4>Ready, steady, go!</h4>
+        <p><strong>Find</strong> further information by reading the <a href="https://guides.github.com/">GitHub tutorials</a>. <strong>Create</strong> an arbitrary HTML document in your cloned repository. Provoke a <strong>conflict</strong>: multiple authors are editing this HTML document and synchronizing changes. Try to resolve the conflicts by merging the edits. Try to revert to an earlier version.</p>
+        <div class="well well-sm"><i class="fa fa-arrow-circle-right"></i>  <strong>Discuss with your tutors:</strong> What is a commit, a synchronization, and a branch?</div>
+        <h3>Set up the development environment</h3>
+        <h4>The device </h4>
+        <p>Get one <strong>iPhone</strong> (Apple iPhone 4) per team member: for collecting it in room MW0330, bring your ID card or passport. Each team member needs to sign the lending!</p>
+        <h4>The environment</h4>
+        <p><strong>Set up</strong> an environment for creating HTML documents on your computer.</p>
+        <ul>
+            <li>Recommended Editor: <a href="http://brackets.io/">Brackets</a>
+            </li>
+            <li>Recommended Browser: <a href="https://www.google.com/chrome/">Chrome</a>
+            </li>
+        </ul>
+        <p><strong>Create</strong> a HTML page (e.g. the HTML skeleton in the slides) with some elements (headline, paragraphs …) and <strong>open</strong> it in your browser (<a href="http://www.w3schools.com/html/html_editors.asp">a description of this procedure is available on w3schools</a>).</p>
+        <p>Access the Chrome <strong>developer tools</strong> and inspect the elements in your document. Activate the device emulation (Apple iPhone 4):</p>
+        <img src="images/device-emulation.png" alt="create branch" class="img-responsive third">
+        <h4>Starting the app</h4>
+        <p>You can now <a href="https://pages.github.com/#project-site">make your HTML accessible via <strong>github.io</strong></a>, a web server publishing all documents you have in the GitHub branch <code>gh-pages</code>.</p>
+        <ol>
+            <li>Go to your project repository: <a href="https://github.com/interactionprototyping">https://github.com/interactionprototyping/GROUP</a> (where GROUP is your group's chosen name)</li>
+            <li>Create a <code>gh-pages</code> branch, which is used to publish your site:
+                <br/>
+                <img src="images/github/github-create-branch.png" alt="create branch" class="img-responsive">
+            </li>
+            <li>Make <code>gh-pages</code> your default branch (go to
+                <img alt="github settings" src="images/github/github-settings.png">, right side):
+                <img alt="github default branch" src="images/github/github-default-branch.png">
+            </li>
+            <li>The files, you commit to this branch, are published under <a href="http://interactionprototyping.github.io/GROUP/FILE.html">http://interactionprototyping.github.io/GROUP/FILE.html</a> (where GROUP is your group name and FILE the filename of the document you committed). <strong>Convention</strong>: If you name your application&rsquo;s starting page <code>index.html</code>, you don&rsquo;t need to enter a filename in your browser: typing <a href="http://interactionprototyping.github.io/GROUP">http://interactionprototyping.github.io/GROUP</a> will then be enough.
+            </li>
+            <li>You can access these files in your phone&rsquo;s browser. Wait five minutes for the first usage after setting up <code>gh-pages</code>.</li>
+        </ol>
+        <p class="well well-sm">
+            <img alt="TUM" src="images/tum.png">You can use the campus Wi-Fi by <a href="https://www.lrz.de/services/netz/mobil/802_1x/ipad/">setting up eduroam</a>!</p>
 
-<h2 id="first">First Iteration</h2>
+        <h3 class="todo">Literature research</h3>
+        <p class="todo"><b>SOMETHING ABOUT READING AND SUMMARIZE!!!!!!!!!!!!</b>
+        </p>
 
-   
-    <h3>Generate ideas for an interactive mobile application</h3>
-    <h4>Assignment</h4>
-    <p> Make a <b> Mind Map</b> of ideas for an interactive mobile application. Think of new and innovative ways how a mobile application can be used, write these down and create a Mind Map. Either make a hand drawn (take a photo) or a software based (see below) Mind Map</p>
-    <h4>Generate ideas and select the best ones</h4>
-    <p>According to the <a href="http://www.jpb.com/creative/cps.php">creative problem solving</a> process (and <a href="http://en.wikipedia.org/wiki/Brainstorming">general brainstorming rules</a>), strictly separate the two  phases <em>convergent</em> (idea generation) and <em>divergent</em> (idea evaluation) thinking. Divergent thinking means a <a href="http://www.creaffective.de/en/publications/book-thinking-tools/">"broad search for many diverse and novel alternatives"</a>. Convergent thinking means a <a href="http://www.creaffective.de/en/publications/book-thinking-tools/">"focused and affirmative evaluation of alternatives"</a>. Separating those phases ensures, that you explore the topic broadly, consider all relevant factors, and find new alternatives. </p>
-    <p>Basic rules for <strong>divergent thinking</strong> are:</p>
-    <dl>
-    <dt>Defer judgement.</dt>
-    <dd>Avoid any form (positive or negative), even thought, and defer to convergent phase.</dd>
-    <dt>Strive for quantity.</dt>
-    <dd>Generate many options to get the chance of finding good options. Whether an option is good or bad is judgment and therefore deferred. </dd>
-    <dt>Seek wild ideas.</dt>
-    <dd>“Wild and crazy” or “childish” ideas have great potential, even if it’s easier to develop than to implement!</dd>
-    <dt>Make connections / build on other ideas.</dt>
-    <dd> Combine and further develop existing elements, as thoughts are springboards for creating alternatives.</dd>
-</dl>
-<p>Basic rules for <b>convergent thinking</b> are:</p>
-<dl>
-<dt></dt>
-       <dd></dd>
-<dt>Apply affirmative judgment. </dt>
-    <dd>Search for value instead of problems, this creates a positive attitude towards new (never perfect) ideas and their realization.</dd>
-    <dt>Be deliberate.</dt>
-    <dd> Dedicate time to judging option, consider options and check against criteria.</dd>
-    <dt>Check your objectives.</dt>
-    <dd>Options are answers to a question, always check the original question and whether or not an idea is on target.
-</dd>
-    <dt>Keep novelty alive. </dt>
-    <dd>New options are created also because existing solutions are not satisfactory, so always consider the novelty of an option.</dd>
-    <dt>Improve ideas.</dt>
-    <dd>An idea is a seed that needs time and care. Keep in mind to develop them further.
-</dd>
-    </dl>
-<p>Apply <a href="http://en.wikipedia.org/wiki/Creativity_techniques">creativity techniques</a> or <a href="http://en.wikipedia.org/wiki/Outline_of_thought#Creative_thought_processes">creative thought processes</a> for both divergent (e.g. brainstorming, ...) and convergent (e.g. telescoping, COCD Box, ...) phases (a good summarizing book is <a href="http://www.amazon.de/Denkwerkzeuge-Kreativit%C3%A4t-Innovation-Florian-Rustler/dp/3000462902/ref=sr_1_1?ie=UTF8&qid=1415975807&sr=8-1&keywords=denkwerkzeuge+der+kreativit%C3%A4t+und+innovation">"Denkwerkzeuge der Kreativität und Innovation" by Florian Rustler</a>). Useful tools are post-its and glue dots.</p>
-    <h4>Mind mapping</h4>
-    <p> Mind mapping is a technique that can assist the process and document the results of a brain storm session.<a href="http://www.wikihow.com/Make-a-Mind-Map"> Read the mind mapping introduction on wikihow</a>, which gives you a short description of the basics of the mind mapping technique. The website <a href="http://www.mind-mapping.co.uk/make-mind-map.htm"> &quot;How to Make a Mind Map&quot; on mind-mapping.co.uk</a> goes into more detail on how to improve your mind map using color, keywords and images.</p>
-    <h4>Software</h4>
-    <p>FreeMind is free software writen in Java, which can be used to to create a min map. <a href="http://freemind.sourceforge.net/wiki/index.php/Main_Page">It can be freely downloaded</a>.</p>
-    
-    <h4>Detailed description of three ideas</h4>
-    <p>Provided a more detailed description of three ideas that came up in the brainstorm. Describe the goal, functionality, and target group of the application. After considering all three options, choose one that you will further develop.</p>
-    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload the brainstorming result, the mindmap and the description of your final idea to the GitHub master branch.</p>
-    
-    <h3>Analysis: Contextual inquiry</h3>
-    <p>Perform an contextual inquiry with a potential user of your mobile application. Consider your target group when choosing the participants (more than five) in your interview. Set up your interview in a structured way, and make observations of the participant using similar applications to identify usability issues or create new interaction forms. If your application is a new concept and there is no applications that is alike, have a structured discussion with your participant about potential problems, features etc.</p>
-    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document and summarize the results of your interviews in the GitHub master branch.</p>
-    
-    <h3>Design: Personas and user scenarios</h3>
-    <p>Read  chapters five and six on modeling users by personas and scenarios in <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper (2007)</a>: <a href="http://proquest.tech.safaribooksonline.de/9780470084113"><em>About Face 3</em></a> (full text accessible via Safari Books). Develop three personas and write user scenarios (narrative) in which the personas use your  mobile app. Sometimes it helps to think about the scenario as &ldquo;a day in the  life&rdquo; of the persona.</p>
-<p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document your personas and scenarios in the GitHub master branch.</p>
-<h3>Implementation: Early stage prototype</h3>
-<p>According to Nielsen's (2012) <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/"><em>Usability 101</em></a>, create <strong>sketched</strong> early stage vertical  prototypes <strong>on paper</strong> of (more than five) different views of your interactive application that address your analysis and design stages. </p>
-<p>Apply design principles (see slides; <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper, 2007</a>) and Nielsen's (1995) <em><a href="http://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a></em>!</p>
-<h3 class="todo">Evaluation: ???</h3>
-<p>Install the  software <a href="https://popapp.in/">POP - Prototyping on Paper</a> on your smartphone. Take pictures of  your drawn screens and link them to show the interaction. </p>
-<p class="todo">Discuss the interaction in  your group and improve it. </p>
-<h3 id="second">Milestone Presentation I</h3>
-<p>You will  demonstrate your methodological findings and your early stage prototypes in 20  minutes during the next Interaction Prototyping session<em></em>. Prepare a <strong>short presentation</strong> on your approach and the corresponding results covering all the work done in the first iteration.</p>
-<p>Don&rsquo;t necessarily proceed  task-by-task, but rather tell a methodological story (why have you chosen certain methods, techniques or tools) following a thread. Demonstrate  the work in progress and formulate questions, you can discuss with the experts  in the plenary.</p>
-<p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>milestone-1</code>on the GitHub master branch. Bring your smartphone with the POP app for the presentation (we'll connect it to a screen).</p>
-<h2>Second Iteration</h2>
-  
-    <h3>Analysis: Requiremens and Usability Goals</h3>
-    <p>Use your  scenarios  to create requirements and usability goals.  Requirements are design oriented and describe <em>what</em> the design needs to be capable. Usability goals are user  oriented and operationally defined (see slides of Usability Engineering for  more details). </p>
-    <p> Remember  that in the later phases of the development process the requirements and  usability goals will be used to evaluate the interaction design. So be sure to  define the requirements and goals operationally. Also, state your requirements  and usability goals in order of importance.</p>
-    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Document</b> your requirements and usability goals in the GitHub master branch. <b>Discuss</b> them with your tutors.</p>
-</div>
+        <h2 id="first">First Iteration</h2>
+
+
+        <h3>Generate ideas for an interactive mobile application</h3>
+        <h4>Assignment</h4>
+        <p>Make a <b> Mind Map</b> of ideas for an interactive mobile application. Think of new and innovative ways how a mobile application can be used, write these down and create a Mind Map. Either make a hand drawn (take a photo) or a software based (see below) Mind Map</p>
+        <h4>Generate ideas and select the best ones</h4>
+        <p>According to the <a href="http://www.jpb.com/creative/cps.php">creative problem solving</a> process (and <a href="http://en.wikipedia.org/wiki/Brainstorming">general brainstorming rules</a>), strictly separate the two phases <em>convergent</em> (idea generation) and <em>divergent</em> (idea evaluation) thinking. Divergent thinking means a <a href="http://www.creaffective.de/en/publications/book-thinking-tools/">"broad search for many diverse and novel alternatives"</a>. Convergent thinking means a <a href="http://www.creaffective.de/en/publications/book-thinking-tools/">"focused and affirmative evaluation of alternatives"</a>. Separating those phases ensures, that you explore the topic broadly, consider all relevant factors, and find new alternatives.</p>
+        <p>Basic rules for <strong>divergent thinking</strong> are:</p>
+        <dl>
+            <dt>Defer judgement.</dt>
+            <dd>Avoid any form (positive or negative), even thought, and defer to convergent phase.</dd>
+            <dt>Strive for quantity.</dt>
+            <dd>Generate many options to get the chance of finding good options. Whether an option is good or bad is judgment and therefore deferred.</dd>
+            <dt>Seek wild ideas.</dt>
+            <dd>“Wild and crazy” or “childish” ideas have great potential, even if it’s easier to develop than to implement!</dd>
+            <dt>Make connections / build on other ideas.</dt>
+            <dd>Combine and further develop existing elements, as thoughts are springboards for creating alternatives.</dd>
+        </dl>
+        <p>Basic rules for <b>convergent thinking</b> are:</p>
+        <dl>
+            <dt></dt>
+            <dd></dd>
+            <dt>Apply affirmative judgment. </dt>
+            <dd>Search for value instead of problems, this creates a positive attitude towards new (never perfect) ideas and their realization.</dd>
+            <dt>Be deliberate.</dt>
+            <dd>Dedicate time to judging option, consider options and check against criteria.</dd>
+            <dt>Check your objectives.</dt>
+            <dd>Options are answers to a question, always check the original question and whether or not an idea is on target.
+            </dd>
+            <dt>Keep novelty alive. </dt>
+            <dd>New options are created also because existing solutions are not satisfactory, so always consider the novelty of an option.</dd>
+            <dt>Improve ideas.</dt>
+            <dd>An idea is a seed that needs time and care. Keep in mind to develop them further.
+            </dd>
+        </dl>
+        <p>Apply <a href="http://en.wikipedia.org/wiki/Creativity_techniques">creativity techniques</a> or <a href="http://en.wikipedia.org/wiki/Outline_of_thought#Creative_thought_processes">creative thought processes</a> for both divergent (e.g. brainstorming, ...) and convergent (e.g. telescoping, COCD Box, ...) phases (a good summarizing book is <a href="http://www.amazon.de/Denkwerkzeuge-Kreativit%C3%A4t-Innovation-Florian-Rustler/dp/3000462902">"Denkwerkzeuge der Kreativität und Innovation" by Florian Rustler</a>). Useful tools are post-its and glue dots.</p>
+        <h4>Mind mapping</h4>
+        <p>Mind mapping is a technique that can assist the process and document the results of a brain storm session.<a href="http://www.wikihow.com/Make-a-Mind-Map"> Read the mind mapping introduction on wikihow</a>, which gives you a short description of the basics of the mind mapping technique. The website <a href="http://www.mind-mapping.co.uk/make-mind-map.htm"> &quot;How to Make a Mind Map&quot; on mind-mapping.co.uk</a> goes into more detail on how to improve your mind map using color, keywords and images.</p>
+        <h4>Software</h4>
+        <p>FreeMind is free software writen in Java, which can be used to to create a min map. <a href="http://freemind.sourceforge.net/wiki/index.php/Main_Page">It can be freely downloaded</a>.</p>
+
+        <h4>Detailed description of three ideas</h4>
+        <p>Provided a more detailed description of three ideas that came up in the brainstorm. Describe the goal, functionality, and target group of the application. After considering all three options, choose one that you will further develop.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload the brainstorming result, the mindmap and the description of your final idea to the GitHub master branch.</p>
+
+        <h3>Analysis: Contextual inquiry</h3>
+        <p>Perform an contextual inquiry with a potential user of your mobile application. Consider your target group when choosing the participants (more than five) in your interview. Set up your interview in a structured way, and make observations of the participant using similar applications to identify usability issues or create new interaction forms. If your application is a new concept and there is no applications that is alike, have a structured discussion with your participant about potential problems, features etc.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document and summarize the results of your interviews in the GitHub master branch.</p>
+
+        <h3>Design: Personas and user scenarios</h3>
+        <p>Read chapters five and six on modeling users by personas and scenarios in <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper (2007)</a>: <a href="http://proquest.tech.safaribooksonline.de/9780470084113"><em>About Face 3</em></a> (full text accessible via Safari Books). Develop three personas and write user scenarios (narrative) in which the personas use your mobile app. Sometimes it helps to think about the scenario as &ldquo;a day in the life&rdquo; of the persona.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document your personas and scenarios in the GitHub master branch.</p>
+        <h3>Implementation: Early stage prototype</h3>
+        <p>According to Nielsen's (2012) <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/"><em>Usability 101</em></a>, create <strong>sketched</strong> early stage vertical prototypes <strong>on paper</strong> of (more than five) different views of your interactive application that address your analysis and design stages.</p>
+        <p>Apply design principles (see slides; <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper, 2007</a>) and Nielsen's (1995) <em><a href="http://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a></em>!</p>
+        <h3 class="todo">Evaluation: ???</h3>
+        <p>Install the software <a href="https://popapp.in/">POP - Prototyping on Paper</a> on your smartphone. Take pictures of your drawn screens and link them to show the interaction.</p>
+        <p class="todo">Discuss the interaction in your group and improve it.</p>
+        <h3 id="second">Milestone Presentation I</h3>
+        <p>You will demonstrate your methodological findings and your early stage prototypes in 20 minutes during the next Interaction Prototyping session<em></em>. Prepare a <strong>short presentation</strong> on your approach and the corresponding results covering all the work done in the first iteration.</p>
+        <p>Don&rsquo;t necessarily proceed task-by-task, but rather tell a methodological story (why have you chosen certain methods, techniques or tools) following a thread. Demonstrate the work in progress and formulate questions, you can discuss with the experts in the plenary.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>milestone-1</code>on the GitHub master branch. Bring your smartphone with the POP app for the presentation (we'll connect it to a screen).</p>
+        <h2>Second Iteration</h2>
+
+        <h3>Analysis: Requiremens and Usability Goals</h3>
+        <p>Use your scenarios to create requirements and usability goals. Requirements are design oriented and describe <em>what</em> the design needs to be capable. Usability goals are user oriented and operationally defined (see slides of Usability Engineering for more details).</p>
+        <p>Remember that in the later phases of the development process the requirements and usability goals will be used to evaluate the interaction design. So be sure to define the requirements and goals operationally. Also, state your requirements and usability goals in order of importance.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i>  <b>Document</b> your requirements and usability goals in the GitHub master branch. <b>Discuss</b> them with your tutors.</p>
+    </div>
 </body>
 
 </html>
