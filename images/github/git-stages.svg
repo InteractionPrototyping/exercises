@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1513.699px" height="901.248px" viewBox="0 0 1513.699 901.248" enable-background="new 0 0 1513.699 901.248"
+	 xml:space="preserve">
+<line fill="none" stroke="#D3DE79" stroke-width="5" x1="156.08" y1="149.07" x2="156.08" y2="832.684"/>
+<line fill="none" stroke="#CEEAF7" stroke-width="5" x1="556.594" y1="239.359" x2="556.594" y2="511.932"/>
+<line fill="none" stroke="#F9BB7D" stroke-width="5" x1="958.607" y1="150.646" x2="958.607" y2="715.213"/>
+<line fill="none" stroke="#E6C973" stroke-width="5" x1="1357.648" y1="320.734" x2="1357.648" y2="832.684"/>
+<line fill="none" stroke="#9D9D9C" stroke-width="1.5" stroke-dasharray="6.03,6.03" x1="1156.771" y1="901.248" x2="1156.771" y2="0"/>
+<text transform="matrix(1 0 0 1 917.1267 81.3994)" fill="#9D9D9C" font-family="'ArialMT'" font-size="90">Local</text>
+<text transform="matrix(1 0 0 1 1179.5505 81.3994)" fill="#9D9D9C" font-family="'ArialMT'" font-size="90">Online</text>
+<line fill="none" stroke="#D3DE79" stroke-width="5" x1="156.08" y1="241.637" x2="538.705" y2="241.637"/>
+<polygon fill="#D3DE79" points="555.094,241.637 534.059,233.982 538.707,241.637 534.059,249.295 "/>
+<text transform="matrix(1 0 0 1 327.0237 239.3584)" font-family="'ArialMT'" font-size="36">add</text>
+<line fill="none" stroke="#CEEAF7" stroke-width="5" x1="558.094" y1="241.637" x2="938.527" y2="241.637"/>
+<polygon fill="#CEEAF7" points="957.107,241.637 930.212,231.85 938.527,241.637 930.212,251.428 "/>
+<text transform="matrix(1 0 0 1 699.8499 239.3584)" font-family="'ArialMT'" font-size="36">commit</text>
+<line fill="none" stroke="#CEEAF7" stroke-width="5" x1="158.33" y1="150.646" x2="940.027" y2="150.646"/>
+<polygon fill="#CEEAF7" points="958.607,150.646 931.707,140.857 940.027,150.646 931.707,160.436 "/>
+<text transform="matrix(1 0 0 1 478.3953 148.0713)" font-family="'ArialMT'" font-size="36">commit -a</text>
+<line fill="none" stroke="#F9BB7D" stroke-width="5" x1="956.691" y1="320.734" x2="1337.126" y2="320.734"/>
+<polygon fill="#F9BB7D" points="1355.708,320.734 1328.809,310.945 1337.126,320.734 1328.809,330.523 "/>
+<text transform="matrix(1 0 0 1 1119.4861 318.4541)" font-family="'ArialMT'" font-size="36">push</text>
+<line fill="none" stroke="#E6C973" stroke-width="5" x1="975.716" y1="597.123" x2="1356.148" y2="597.123"/>
+<polygon fill="#E6C973" points="957.134,597.123 984.031,606.91 975.716,597.123 984.031,587.334 "/>
+<line fill="none" stroke="#E6C973" stroke-width="5" x1="177.66" y1="832.684" x2="1359.895" y2="832.684"/>
+<polygon fill="#E6C973" points="159.08,832.684 185.979,842.473 177.66,832.684 185.979,822.895 "/>
+<line fill="none" stroke="#F9BB7D" stroke-width="5" x1="176.91" y1="597.746" x2="957.107" y2="597.746"/>
+<polygon fill="#F9BB7D" points="158.33,597.746 185.229,607.535 176.91,597.746 185.229,587.957 "/>
+<rect x="0" y="390.043" fill="#D3DE79" width="312.158" height="121.889"/>
+<rect x="400.512" y="390.043" fill="#CEEAF7" width="312.158" height="121.889"/>
+<text transform="matrix(1 0 0 1 514.7327 463.085)" font-family="'ArialMT'" font-size="36">Index</text>
+<rect x="801.027" y="390.043" fill="#F9BB7D" width="312.16" height="121.889"/>
+<rect x="1201.539" y="390.043" fill="#E6C973" width="312.16" height="121.889"/>
+<line fill="none" stroke="#F9BB7D" stroke-width="5" x1="176.91" y1="715.215" x2="957.107" y2="715.215"/>
+<polygon fill="#F9BB7D" points="158.33,715.215 185.229,725.004 176.91,715.215 185.229,705.426 "/>
+<text transform="matrix(1 0 0 1 984.2517 112.7607)" fill="#575756" font-family="'ArialMT'" font-size="24">Git (Software)</text>
+<text transform="matrix(1 0 0 1 1181.5505 112.7607)" fill="#575756" font-family="'ArialMT'" font-size="24">GitHub (github.com)</text>
+<text transform="matrix(1 0 0 1 485.3562 594.8408)" font-family="'ArialMT'" font-size="36">checkout</text>
+<text transform="matrix(1 0 0 1 506.3796 713.2129)" font-family="'ArialMT'" font-size="36">merge</text>
+<text transform="matrix(1 0 0 1 1119.4939 595.8408)" font-family="'ArialMT'" font-size="36">fetch</text>
+<text transform="matrix(1 0 0 1 725.4978 830.6836)" font-family="'ArialMT'" font-size="36">pull</text>
+<text transform="matrix(1 0 0 1 65.7327 463.085)" font-family="'ArialMT'" font-size="36">Workspace</text>
+<text transform="matrix(1 0 0 1 825.3474 463.085)" font-family="'ArialMT'" font-size="36">Local Repository</text>
+<text transform="matrix(1 0 0 1 1216.9666 463.085)" font-family="'ArialMT'" font-size="36">Online Repository</text>
+<g>
+	<text transform="matrix(1 0 0 1 320.5037 173.124)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">commit all changed files + add all changed files to the index</tspan><tspan x="111.836" y="21.6" font-family="'ArialMT'" font-size="18">(simultaneous commit and add)</tspan></text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 164.7458 266.5303)" font-family="'ArialMT'" font-size="18">add files from your local workspace to the index</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 581.5442 266.5303)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">commit all changed files that were added to</tspan><tspan x="136.569" y="21.6" font-family="'ArialMT'" font-size="18">the index</tspan></text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 995.6677 342.8501)" font-family="'ArialMT'" font-size="18">send all changes to the online repository</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 1015.1833 620.6377)"><tspan x="0" y="0" font-family="'ArialMT'" font-size="18">download current online files to the </tspan><tspan x="81.063" y="21.6" font-family="'ArialMT'" font-size="18">local repository</tspan></text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 356.4314 620.6377)" font-family="'ArialMT'" font-size="18">copy files from local repository / history to workspace</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 302.9612 739.6377)" font-family="'ArialMT'" font-size="18">merge and unite commits of different branches to one repository</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 482.7053 856.6377)" font-family="'ArialMT'" font-size="18">update workspace with all remote changes from the online repository</text>
+</g>
+</svg>
