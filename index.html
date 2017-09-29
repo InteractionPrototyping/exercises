@@ -44,7 +44,7 @@
             counter-reset: tasks;
         }
         
-        h3:before {
+        h3.numbered:before {
             content: "Task " counter(tasks)": ";
             counter-increment: tasks;
             font-weight: bold;
@@ -211,7 +211,7 @@
     PREPARATION
     -->
         <h2 id="preparation">Get Ready</h2>
-        <h3>Join Mendeley and the Interaction Prototyping group</h3>
+        <h3 class="plain">Join Mendeley and the Interaction Prototyping group</h3>
         <p>The literature presented in class and used in these exercises is available in the Mendeley <a href="https://www.mendeley.com/groups/6954121/interaction-prototyping/">Interaction Prototyping group</a>, which you should join. There is a <a href="https://www.mendeley.com/download-mendeley-desktop">desktop client </a>of Mendeley. </p>
         <p class="well well-sm"><img alt="TUM" src="images/tum.svg" style="height: 20px; margin-right: 10px;"> Many of the papers and books are available online (inside the university network). Please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.</p>
         <h3>Join GitHub and your team repository</h3>
@@ -372,11 +372,11 @@ Here is another conflicting change
         <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload the a picture of the brainstorming result and the mindmap to a folder <code>iteration-1/ideas</code> in the GitHub <code>master</code> branch.</p>
 
         <h2 id="first">First Iteration</h2>
-        <h3>Understanding the users: Qualitative analysis</h3>
+        <h3 class="numbered">Understanding the users: Qualitative analysis</h3>
         <p>Perform a <a href="http://www.usabilitynet.org/tools/contextualinquiry.htm"> contextual inquiry</a> or any of the qualitative research methods described in <a href="http://proquest.tech.safaribooksonline.de/9780470084113"> Chapter 4 in Cooper (2007)</a> with potential users of your mobile application. Consider your target group when choosing the participants (more than five) in your interview. Set up your analysis in a structured way, and/or make observations of the participant using similar applications to identify usability issues or create new interaction forms. If your application is a new concept and there are no similar applications, have a structured discussion with your participant about potential problems, features etc.</p>
         <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Summarize the results of your analysis (not more than 1 page) in a folder <code>iteration-1/contextual-inquiry</code> in the GitHub <code>master</code> branch.</p>
 
-        <h3>Design: User goals and personas and scenarios</h3>
+        <h3 class="numbered">Design: User goals and personas and scenarios</h3>
         <p>Read chapter 5 in <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper (2007)</a>: <a href="http://proquest.tech.safaribooksonline.de/9780470084113"><em>About Face 3</em></a> (full text accessible via Safari Books).</p>
         <h4>User Goals and Personas</h4>
         <p>Create 3 personas based on your contextual inquiry or interview. Read <a href="https://www.usability.gov/how-to-and-tools/methods/personas.html">this guide provided by the U.S. Department of Health &amp; Human Services</a> on the develpment process and elements of personas. </p>
@@ -385,18 +385,23 @@ Here is another conflicting change
         <h4>Scenarios</h4>
         <p>Read chapter 6 on scenarios in <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper (2007)</a>: <a href="http://proquest.tech.safaribooksonline.de/9780470084113"><em>About Face 3</em></a>. Write user scenarios (narrative) in which the personas use your mobile app. Use the personas to come up with scenarios in which the app is utilized.</p>
         <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Document your personas and scenarios (e.g. in <code>.ppt</code>) in a folder <code>iteration-1/design</code> in the GitHub <code>master</code> branch. </p>
-       	<h3>Implementation: Early stage prototype</h3>
+       	
+       	<h3 class="numbered">Implementation: Early stage prototype</h3>
         <p>Using Nielsen's (2012) <a href="http://www.nngroup.com/articles/usability-101-introduction-to-usability/"><em>Usability 101</em></a>, create <strong>sketched</strong> early stage vertical prototypes <strong>on paper</strong> of (more than five) different views of your interactive application that address your analysis and design stages. </p>
         <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your screen images to a folder <code>iteration-1/prototype</code> in the GitHub <code>master</code> branch. </p>
-        <h3>Evaluation: Thinking aloud</h3>
+        
+        <h3 class="numbered">Evaluation: Thinking aloud</h3>
         <p>Run a <strong>thinking aloud</strong> experiment, as per <a href="https://www.mendeley.com/research/guerrilla-hci-using-discount-usability-engineering-penetrate-intimidation-barrier/">Nielsen&rsquo;s  (1994)</a> paradigm <a href="http://www.nngroup.com/articles/guerrilla-hci/"><em>Discount Usability Engineering</em></a> (a small group of 2-5 persons is sufficient). An important rule is established in <a href="https://www.mendeley.com/research/10-steps-engaging-user-experience/">Pereyra's (2015)</a>, principle 10: &quot;Don't grade your own homework&quot; in <em><a href="http://www.creativebloq.com/ux/10-steps-engaging-user-experience-3156607">10 steps to engaging user experience</a></em>: involve users as subjects, you&rsquo;ve not asked yet! Record the evaluation in a suitable manner and discuss usability issues and possible improvements.</p>
         <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload a short <strong>usability report</strong> including your conclusions (not more than 1 page) to a folder <code>iteration-1/thinking-aloud</code> in the GitHub <code>master</code> branch. </p>
-        <h3>Milestone Presentation I</h3>
+        
+        <h3 class="numbered">Milestone Presentation I</h3>
         <p>You will demonstrate your methodological findings and your early stage prototypes during the next Interaction Prototyping session<em></em>. Prepare a <strong> 10 minute presentation</strong> on your approach and the corresponding results, covering all the work done in the first iteration.</p>
         <p>Don&rsquo;t necessarily proceed task-by-task, but rather tell a methodological story (why you chose certain methods, techniques or tools). Demonstrate the work in progress and formulate questions to debate with the experts in the plenary during a <strong> 10 minute discussion</strong>.</p>
         <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>iteration-1/presentation</code> on the GitHub <code>master</code> branch.</p>
+        
+
         <h2 id="second">Second Iteration</h2>
-        <h3>Analysis:  Use cases, usability goals, and principles</h3>
+        <h3 class="numbered">Analysis:  Use cases, usability goals, and principles</h3>
         <h4>Use cases (UML)</h4>
         <p>Specify your application <strong>functional requirements</strong> based on your personas and goals in a formal way. Use <a href="http://proquestcombo.safaribooksonline.com/0596009828">UML Use Case Diagrams (see Chapter 2 Miles, 2006)</a> to describe the functional requirements of your application (e.g., buying, listening, rating, searching).</p>
         <p>Consider paths from starting the app until performing a certain action/goal (for example, in case of a music application, listening to a specific track). Consider deviations from that path (like, for a music application, &quot;music not found&quot;, &quot;music not offline available&quot;, or &quot;song preview&quot;).</p>
@@ -415,139 +420,145 @@ Here is another conflicting change
                     <li><a href="https://www.cs.umd.edu/users/ben/goldenrules.html"> Shneiderman's eight golden rules of interface design</a> (chapter 2.3), in Shneiderman, B., &#38; Plaisant, C. (2010). <em>Designing the user interface</em>. Upper Saddle River, NJ: Addison-Wesley. </li>
                     <li> <a href="http://asktog.com/atc/principles-of-interaction-design/">Tognazzini's (2014) First Principles of Interaction Design (Revised &amp; Expanded)</a></li>
                 </ul>
-	 <p>It is suggested to orientate yourself to the Nielsen's 10 Usability heuristics, and read other rules as information </p>    
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Document</b> (e.g. <code>.ppt</code>) your (new) <em>requirements,  usability goals</em> and exemplify how the <em>principles</em> were accounted for and improvements needed in a folder <code>iteration-2/analysis</code> in the GitHub <code>master</code> branch.<b> Discuss</b> them with your tutors.</p>
-                <h3>Design: Apply the analysis to your design</h3>
-                <p>Apply your knowledge gained from analyzing UML, usability requirements and goals, as well as the principles: <strong>Put to the side</strong> your paper prototype from the first iteration and <strong> redraw </strong> it using what you have learned (e.g., principles).Do not fear fear - just do it; "the chance of you hitting the bulls eye with you first shot is very slim" <a href="http://www.creativebloq.com/ux/10-steps-engaging-user-experience-3156607"> (Pereyra, step 10)</a>. Also use the findings from your evaluation of the first iteration. To see why this is important, see <a href="http://www.nngroup.com/articles/paper-prototyping/">paper prototyping according to the Nielson Norman Group</a>. </p>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your <strong>screens</strong> <code>iteration-2/design</code> in the GitHub <code>master</code> branch. </p>
-                <h3>Implementation: hi-fi paper prototype <strong>Deadline: 23.05.2017</strong> </h3>
-                <p>Create a prototype with the software <a href="https://popapp.in/">POP - Prototyping on Paper</a> with more details and interactions based on the define functional requirment in the UML in Task 10 and the improved screens in Task 11.</p>
-	    	<p>This prototype will be regarded as the "hi-fi paper prototype", which includes most of the design features and interaction concepts of the app.
+	 	<p>It is suggested to orientate yourself to the Nielsen's 10 Usability heuristics, and read other rules as information </p>    
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Document</b> (e.g. <code>.ppt</code>) your (new) <em>requirements,  usability goals</em> and exemplify how the <em>principles</em> were accounted for and improvements needed in a folder <code>iteration-2/analysis</code> in the GitHub <code>master</code> branch.<b> Discuss</b> them with your tutors.</p>
+        
+        <h3 class="numbered">Design: Apply the analysis to your design</h3>
+        <p>Apply your knowledge gained from analyzing UML, usability requirements and goals, as well as the principles: <strong>Put to the side</strong> your paper prototype from the first iteration and <strong> redraw </strong> it using what you have learned (e.g., principles).Do not fear fear - just do it; "the chance of you hitting the bulls eye with you first shot is very slim" <a href="http://www.creativebloq.com/ux/10-steps-engaging-user-experience-3156607"> (Pereyra, step 10)</a>. Also use the findings from your evaluation of the first iteration. To see why this is important, see <a href="http://www.nngroup.com/articles/paper-prototyping/">paper prototyping according to the Nielson Norman Group</a>. </p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your <strong>screens</strong> <code>iteration-2/design</code> in the GitHub <code>master</code> branch. </p>
+        
+        <h3 class="numbered">Implementation: hi-fi paper prototype <strong>Deadline: 23.05.2017</strong> </h3>
+        <p>Create a prototype with the software <a href="https://popapp.in/">POP - Prototyping on Paper</a> with more details and interactions based on the define functional requirment in the UML in Task 10 and the improved screens in Task 11.</p>
+	    <p>This prototype will be regarded as the "hi-fi paper prototype", which includes most of the design features and interaction concepts of the app.
 		<p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your sharing URL of <strong>your POP prototype</strong> to a folder <code>iteration-2/design</code> in the GitHub <code>master</code> branch. Offer the POP prototype for your partner group (another team in this course) to conduct the Task 13.  </p>	
-                <h3>Evaluation: Heuristic evaluation <strong>Deadline: 28.05.2017</strong></h3>
-                <p>Do a <strong>heuristic usability  evaluation</strong> of the POP prototype from your your partner group (another team in this course) as experts using the template we provide. Again consider <a href="https://www.mendeley.com/research/guerrilla-hci-using-discount-usability-engineering-penetrate-intimidation-barrier/">Nielsen&rsquo;s  (1994)</a> paradigm <a href="http://www.nngroup.com/articles/guerrilla-hci/"><em>Discount Usability Engineering</em></a>, as well as <a href="http://www.nngroup.com/topic/heuristic-evaluation/">Nielsen's collection of information on <em>Heuristic Evaluations</em></a>. Details can be found in <a href="http://proquest.tech.safaribooksonline.de/9780125184069 ">Nielsen's (1993, chapter 5.11)<em>. </em></a>You can follow two approaches:</p>
-                <ul>
-                    <li>Use subjects as evaluators, brief them with the heuristics, and assign/interpret issues as an experimenter. <a href="http://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/">Apply a severity rating</a>.</li>
-                    <li>Conduct an <em>expert heuristic evaluation</em> (or checklist evaluation), using custom detailled checklist based on heuristics derived from your principles. An example is given in <a href="https://www.mendeley.com/research/heuristic-evaluation-system-checklist/">Pierotti (1995, not accessible any more</a>; <a href="http://eitidaten.fh-pforzheim.de/daten/mitarbeiter/blankenbach/vorlesungen/GUI/Heuristic_Evaluation_Checklist_stcsig_org.pdf">PDF can be found here)</a>, another in <a href="https://www.mendeley.com/c/7892643974/g/6954121/yanez-gomez-2014-heuristic-evaluation-on-mobile-interfaces-a-new-checklist/">Gómez, Caballero, & Sevillano (2014</a>; <a href="downloads.hindawi.com/journals/tswj/2014/434326.f1.pdf">Gómez' checklist can be found in the Appendix A</a>). </li>
-                </ul>
-                <p class="well well-sm">
-                <a href="resources/ipp_heuristic_evaluation_template.docx" class="btn btn-default btn-lg btn-block" role="button" style="margin-bottom: 10px;">Download Template</a>		
-                <i class="fa fa-arrow-circle-right"></i><b> Upload the evaluation report </b>in a folder <code>iteration-2/heuristic-evaluation</code> in the GitHub <code>master</code> branch. Offer your evaluation and feedbacks to your partner group (another team in this course) to conduct the Task 14 </p>
-                <h3 id="second2">Milestone Presentation II</h3>
-                <p>Prepare a <strong>short presentation</strong> on your approach and the corresponding results in the second iteration, including reflections based on the evaluation result. You will demonstrate your methodological findings and your hi-fi paper prototype in 20 minutes (10 minutes presentation and 10 minutes discussion) <em>Please ensure that your presentation does not exceed the alloted time!</em> </p>
-                <p>Don&rsquo;t necessarily proceed task-by-task, but rather tell a methodological story (why have you chosen certain methods, techniques or tools). Demonstrate the work in progress and formulate questions, you can discuss with the experts in the plenary.</p>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Exchange the evaluation results between the evaluator and the evaluatee, upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>iteration-2/presentation</code>on the GitHub <code>master</code> branch. 
-                <h2 id="third">Third Iteration</h2>
-                <h3>Analysis: Interaction and design framework</h3>
-                <p>Generally speaking there are two ways for you to determine the design language/framework you can use in your app. You can <strong>use a predefined styleguide</strong> or you can <strong>define your own style</strong>. Where both approaches have advantages and disadvantages alike, it is your task to make an <strong>educated choice</strong> and <strong>document it properly</strong>. The choice of framework/design language strongly influences the interaction patterns your app is going to employ. Inform yourself on <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper's (2007)</a> interaction framework (chapter 7) and <a target="_blank" href="https://www.google.de/search?q=html+frameworks">design frameworks</a>.</p>
-                <p>There are three best practices from which you may choose freely:</p>
-                <div class="row hidden-print">
-                	<div class="col-xs-12 col-md-4">
-                		<div class="thumbnail">
-                			<img src="images/courseRating_material.png" alt="Material Design example">
-                			<div class="caption">
-                				<p>&copy; <a class="hidden-print" href="https://interactionprototyping.github.io/IPPTeam5/">Course Rating App</a>, IPP WS16/17</p>
-                				<h4>Google's Material Design</h4>
-                				<p>Design language developed by Google. Used on a wide variety of Android devices and in the web.</p>
-                				<p>
-                				<a href="https://material.io/guidelines/material-design/introduction.html" class="btn btn-primary btn-lg btn-block" role="button">Info</a>
-                				</p>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="col-xs-12 col-md-4">
-                		<div class="thumbnail">
-                			<img src="images/habbiApp_iOS.png" alt="iOS example">
-                			<div class="caption">
-                				<p>&copy; <a class="hidden-print" href="https://interactionprototyping.github.io/habbiApp/">HabbiApp</a>, IPP WS16/17</p>
-                				<h4>Apple's iOS Guidelines</h4>
-                				<p>Design language developed by Apple. Used mainly on iOS devices and on some websites.</p>
-                				<p>
-                					<a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" class="btn btn-primary btn-lg btn-block" role="button">Info</a>
-                				</p>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="col-xs-12 col-md-4">
-                		<div class="thumbnail">
-                			<img src="images/skillers_custom.png" alt="custom example">
-                			<div class="caption">
-                				<p>&copy; <a class="hidden-print" href="https://interactionprototyping.github.io/Teachapp/v5/">Skillers</a>, IPP WS16/17</p>
-                				<h4>Your Own Design Language</h4>
-                				<p>A design language carefully crafted by yourself and tailored to the specific needs of your app.</p>
-                				<p>
-                					<a href="http://styleguides.io/" class="btn btn-primary btn-lg btn-block" role="button">Info</a>
-                				</p>
-                			</div>
-                		</div>
-                	</div>
-                </div>
-                <div class="row visible-print-inline">
-                	<div class="col-xs-4">
-                		<div class="thumbnail">
-                			<img src="images/courseRating_material.png" alt="Material Design example">
-                			<div class="caption">
-                				<p>&copy; Course Rating App, IPP WS16/17</p>
-                				<h4>Google's Material Design</h4>
-                				<p>Design language developed by Google. Used on a wide variety of Android devices and in the web.</p>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="col-xs-4">
-                		<div class="thumbnail">
-                			<img src="images/habbiApp_iOS.png" alt="iOS example">
-                			<div class="caption">
-                				<p>&copy; HabbiApp, IPP WS16/17</p>
-                				<h4>Apple's iOS Guidelines</h4>
-                				<p>Design language developed by Apple. Used mainly on iOS devices and on some websites.</p>
-                			</div>
-                		</div>
-                	</div>
-                	<div class="col-xs-4">
-                		<div class="thumbnail">
-                			<img src="images/skillers_custom.png" alt="custom example">
-                			<div class="caption">
-                				<p>&copy; Skillers, IPP WS16/17</p>
-                				<h4>Your Own Design Language</h4>
-                				<p>A design language carefully crafted by yourself and tailored to the specific needs of your app.</p>
-                			</div>
-                		</div>
-                	</div>
-                </div>
+                
+        <h3>Evaluation: Heuristic evaluation <strong>Deadline: 28.05.2017</strong></h3>
+        <p>Do a <strong>heuristic usability  evaluation</strong> of the POP prototype from your your partner group (another team in this course) as experts using the template we provide. Again consider <a href="https://www.mendeley.com/research/guerrilla-hci-using-discount-usability-engineering-penetrate-intimidation-barrier/">Nielsen&rsquo;s  (1994)</a> paradigm <a href="http://www.nngroup.com/articles/guerrilla-hci/"><em>Discount Usability Engineering</em></a>, as well as <a href="http://www.nngroup.com/topic/heuristic-evaluation/">Nielsen's collection of information on <em>Heuristic Evaluations</em></a>. Details can be found in <a href="http://proquest.tech.safaribooksonline.de/9780125184069 ">Nielsen's (1993, chapter 5.11)<em>. </em></a>You can follow two approaches:</p>
+            <ul>
+                <li>Use subjects as evaluators, brief them with the heuristics, and assign/interpret issues as an experimenter. <a href="http://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/">Apply a severity rating</a>.</li>
+                <li>Conduct an <em>expert heuristic evaluation</em> (or checklist evaluation), using custom detailled checklist based on heuristics derived from your principles. An example is given in <a href="https://www.mendeley.com/research/heuristic-evaluation-system-checklist/">Pierotti (1995, not accessible any more</a>; <a href="http://eitidaten.fh-pforzheim.de/daten/mitarbeiter/blankenbach/vorlesungen/GUI/Heuristic_Evaluation_Checklist_stcsig_org.pdf">PDF can be found here)</a>, another in <a href="https://www.mendeley.com/c/7892643974/g/6954121/yanez-gomez-2014-heuristic-evaluation-on-mobile-interfaces-a-new-checklist/">Gómez, Caballero, & Sevillano (2014</a>; <a href="downloads.hindawi.com/journals/tswj/2014/434326.f1.pdf">Gómez' checklist can be found in the Appendix A</a>). </li>
+            </ul>
+            <p class="well well-sm">
+            <a href="resources/ipp_heuristic_evaluation_template.docx" class="btn btn-default btn-lg btn-block" role="button" style="margin-bottom: 10px;">Download Template</a>		
+            <i class="fa fa-arrow-circle-right"></i><b> Upload the evaluation report </b>in a folder <code>iteration-2/heuristic-evaluation</code> in the GitHub <code>master</code> branch. Offer your evaluation and feedbacks to your partner group (another team in this course) to conduct the Task 14 </p>
+                
+        <h3 class="numbered" id="second2">Milestone Presentation II</h3>
+        <p>Prepare a <strong>short presentation</strong> on your approach and the corresponding results in the second iteration, including reflections based on the evaluation result. You will demonstrate your methodological findings and your hi-fi paper prototype in 20 minutes (10 minutes presentation and 10 minutes discussion) <em>Please ensure that your presentation does not exceed the alloted time!</em> </p>
+        <p>Don&rsquo;t necessarily proceed task-by-task, but rather tell a methodological story (why have you chosen certain methods, techniques or tools). Demonstrate the work in progress and formulate questions, you can discuss with the experts in the plenary.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Exchange the evaluation results between the evaluator and the evaluatee, upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>iteration-2/presentation</code>on the GitHub <code>master</code> branch. 
+                
 
-				<div class="alert alert-info" role="alert">
-					<p>While we do not require you to use any framework at all, we <strong>strongly suggest</strong> you use one. Choice of framework is up to you, however a flexible candidate, that incorporates material design, iOS guidelines as well as customization options is <strong><a href="https://framework7.io/"> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Framework 7</a></strong>.</p>
-                </div>
+        <h2 id="third">Third Iteration</h2>
+        <h3 class="numbered">Analysis: Interaction and design framework</h3>
+        <p>Generally speaking there are two ways for you to determine the design language/framework you can use in your app. You can <strong>use a predefined styleguide</strong> or you can <strong>define your own style</strong>. Where both approaches have advantages and disadvantages alike, it is your task to make an <strong>educated choice</strong> and <strong>document it properly</strong>. The choice of framework/design language strongly influences the interaction patterns your app is going to employ. Inform yourself on <a href="https://www.mendeley.com/catalog/about-face-3-essentials-interaction-design/">Cooper's (2007)</a> interaction framework (chapter 7) and <a target="_blank" href="https://www.google.de/search?q=html+frameworks">design frameworks</a>.</p>
+        <p>There are three best practices from which you may choose freely:</p>
+            <div class="row hidden-print">
+            	<div class="col-xs-12 col-md-4">
+            		<div class="thumbnail">
+            			<img src="images/courseRating_material.png" alt="Material Design example">
+            			<div class="caption">
+            				<p>&copy; <a class="hidden-print" href="https://interactionprototyping.github.io/IPPTeam5/">Course Rating App</a>, IPP WS16/17</p>
+            				<h4>Google's Material Design</h4>
+            				<p>Design language developed by Google. Used on a wide variety of Android devices and in the web.</p>
+            				<p>
+            				<a href="https://material.io/guidelines/material-design/introduction.html" class="btn btn-primary btn-lg btn-block" role="button">Info</a>
+            				</p>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-xs-12 col-md-4">
+            		<div class="thumbnail">
+            			<img src="images/habbiApp_iOS.png" alt="iOS example">
+            			<div class="caption">
+            				<p>&copy; <a class="hidden-print" href="https://interactionprototyping.github.io/habbiApp/">HabbiApp</a>, IPP WS16/17</p>
+            				<h4>Apple's iOS Guidelines</h4>
+            				<p>Design language developed by Apple. Used mainly on iOS devices and on some websites.</p>
+            				<p>
+            					<a href="https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/" class="btn btn-primary btn-lg btn-block" role="button">Info</a>
+            				</p>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-xs-12 col-md-4">
+            		<div class="thumbnail">
+            			<img src="images/skillers_custom.png" alt="custom example">
+            			<div class="caption">
+            				<p>&copy; <a class="hidden-print" href="https://interactionprototyping.github.io/Teachapp/v5/">Skillers</a>, IPP WS16/17</p>
+            				<h4>Your Own Design Language</h4>
+            				<p>A design language carefully crafted by yourself and tailored to the specific needs of your app.</p>
+            				<p>
+            					<a href="http://styleguides.io/" class="btn btn-primary btn-lg btn-block" role="button">Info</a>
+            				</p>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+            <div class="row visible-print-inline">
+            	<div class="col-xs-4">
+            		<div class="thumbnail">
+            			<img src="images/courseRating_material.png" alt="Material Design example">
+            			<div class="caption">
+            				<p>&copy; Course Rating App, IPP WS16/17</p>
+            				<h4>Google's Material Design</h4>
+            				<p>Design language developed by Google. Used on a wide variety of Android devices and in the web.</p>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-xs-4">
+            		<div class="thumbnail">
+            			<img src="images/habbiApp_iOS.png" alt="iOS example">
+            			<div class="caption">
+            				<p>&copy; HabbiApp, IPP WS16/17</p>
+            				<h4>Apple's iOS Guidelines</h4>
+            				<p>Design language developed by Apple. Used mainly on iOS devices and on some websites.</p>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="col-xs-4">
+            		<div class="thumbnail">
+            			<img src="images/skillers_custom.png" alt="custom example">
+            			<div class="caption">
+            				<p>&copy; Skillers, IPP WS16/17</p>
+            				<h4>Your Own Design Language</h4>
+            				<p>A design language carefully crafted by yourself and tailored to the specific needs of your app.</p>
+            			</div>
+            		</div>
+            	</div>
+            </div>
 
-                <p>When choosing to follow a predefined design language, be precise and make sure to really <strong>follow it</strong>. Deviations from a chosen language have to be explained reasonably and the observance of your chosen style will be considered during grading.</p>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Discuss</strong> your considerations and decisions with your programming tutor. Document your decision process and why you chose which design language on <strong>not more than one page</strong> in <code>iteration-3/analysis</code> in the GitHub <code>master</code> branch.</p>
+			<div class="alert alert-info" role="alert">
+				<p>While we do not require you to use any framework at all, we <strong>strongly suggest</strong> you use one. Choice of framework is up to you, however a flexible candidate, that incorporates material design, iOS guidelines as well as customization options is <strong><a href="https://framework7.io/"> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Framework 7</a></strong>.</p>
+            </div>
 
-                <h3>Design: Style your prototype</h3>
-                <p>Using the design language from the previous task, redesign your paper prototype accordingly. The obtained results should have a <strong>high graphical fidelity</strong> and resemble the goal for your final design. These screens can best be designed using graphical software like</p>
-                <ul>
-                	<li><a href="http://www.adobe.com/de/products/photoshop.html">Photoshop</a></li>
-                	<li><a href="https://www.gimp.org/">Gimp</a></li>
-                	<li><a href="https://products.office.com/powerpoint">Powerpoint</a></li>
-                	<li><a href="https://www.axure.com/">Axure</a></li>
-                	<li><a href="http://origami.design/">Origami</a></li>
-                	<li>&hellip;</li>
-                </ul>
+            <p>When choosing to follow a predefined design language, be precise and make sure to really <strong>follow it</strong>. Deviations from a chosen language have to be explained reasonably and the observance of your chosen style will be considered during grading.</p>
+            <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Discuss</strong> your considerations and decisions with your programming tutor. Document your decision process and why you chose which design language on <strong>not more than one page</strong> in <code>iteration-3/analysis</code> in the GitHub <code>master</code> branch.</p>
 
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Document at least 3 example screens </strong> following the new style as images in <code>iteration-3/design</code> in the GitHub <code>master</code> branch.</p>
+        <h3 class="numbered">Design: Style your prototype</h3>
+        <p>Using the design language from the previous task, redesign your paper prototype accordingly. The obtained results should have a <strong>high graphical fidelity</strong> and resemble the goal for your final design. These screens can best be designed using graphical software like</p>
+            <ul>
+            	<li><a href="http://www.adobe.com/de/products/photoshop.html">Photoshop</a></li>
+            	<li><a href="https://www.gimp.org/">Gimp</a></li>
+            	<li><a href="https://products.office.com/powerpoint">Powerpoint</a></li>
+            	<li><a href="https://www.axure.com/">Axure</a></li>
+            	<li><a href="http://origami.design/">Origami</a></li>
+            	<li>&hellip;</li>
+            </ul>
 
-                <h3>Implementation: Transfer the prototype to a web app</h3>
-                <p>Transfer the early stage prototype views to a prototypical <b>lo-fi</b> HTML/CSS/JS application. Focus on the prototypical <strong>views</strong> of your early stage prototype, add <strong>interaction</strong> for switching the views (not too much functionality yet). <strong>Ensure that you still apply the design (or usability) principles!</strong></p>
-                <p><strong>Add  all views</strong> you need for matching your scenarios and requirements.</p>
-                <ul>
-                    <li>Use CSS/JS frameworks as necessary</li>
-                    <li>Add style sheets and scripts as external files. Comment them!</li>
-                </ul>
-                <p><strong>Test</strong> the mobile usage of different application views </p>
-                <ul>
-                    <li>By using the phone emulator in Google Chrome. </li>
-                    <li>On your smartphones using GitHub.io</li>
-                </ul>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Store your web app</b> in a (public) folder <code>v3</code> in the GitHub <code>gh-pages</code> branch.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Document at least 3 example screens </strong> following the new style as images in <code>iteration-3/design</code> in the GitHub <code>master</code> branch.</p>
+
+        <h3 class="numbered">Implementation: Transfer the prototype to a web app</h3>
+        <p>Transfer the early stage prototype views to a prototypical <b>lo-fi</b> HTML/CSS/JS application. Focus on the prototypical <strong>views</strong> of your early stage prototype, add <strong>interaction</strong> for switching the views (not too much functionality yet). <strong>Ensure that you still apply the design (or usability) principles!</strong></p>
+        <p><strong>Add  all views</strong> you need for matching your scenarios and requirements.</p>
+        <ul>
+            <li>Use CSS/JS frameworks as necessary</li>
+            <li>Add style sheets and scripts as external files. Comment them!</li>
+        </ul>
+        <p><strong>Test</strong> the mobile usage of different application views </p>
+        <ul>
+            <li>By using the phone emulator in Google Chrome. </li>
+            <li>On your smartphones using GitHub.io</li>
+        </ul>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Store your web app</b> in a (public) folder <code>v3</code> in the GitHub <code>gh-pages</code> branch.</p>
                 
                 <!-- Task 16 & 17
 
@@ -568,160 +579,164 @@ Here is another conflicting change
                     <li>Implement the visual appearance to match your defined style (and the guidelines)</li>
                 </ol>
                 <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Store your web app</b> in a (public) folder <code>v3</code> in the GitHub <code>gh-pages</code> branch.</p> -->
-                <h3>Qualitative Evaluation</h3>
-                <p>Conduct a <strong>qualitative</strong> evaluation of your prototype with <strong>2-5 participants</strong> based on your user scenarios and test cases. Define criteria for your evaluation. Document/record the test in a suitable way (photos, log, etc.). For inspiration, read Chapter 7 (&quot;Usability Assessment Methods beyound Testing&quot;) in <a href="http://proquest.tech.safaribooksonline.de/9780125184069">Nielsen (1993)</a>, or Chapter 4 (&quot;Evaluating Interface Designs&quot;) in Shneiderman (2014).</p>
-                <p> Write/draw a <strong>very</strong> <strong>brief evaluation report</strong> on 1 single page, summarizing the documented evaluation. Describe your evaluation approach in a schematic manner: include your test cases, participant pool, identified problems &amp; suggestions, etc. as well as your interpretations.</p>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Upload your evaluation report</strong> to a folder <code>iteration-3/evaluation</code> on the GitHub <code>master</code> branch.</p>
+        <h3 class="numbered">Qualitative Evaluation</h3>
+        <p>Conduct a <strong>qualitative</strong> evaluation of your prototype with <strong>2-5 participants</strong> based on your user scenarios and test cases. Define criteria for your evaluation. Document/record the test in a suitable way (photos, log, etc.). For inspiration, read Chapter 7 (&quot;Usability Assessment Methods beyound Testing&quot;) in <a href="http://proquest.tech.safaribooksonline.de/9780125184069">Nielsen (1993)</a>, or Chapter 4 (&quot;Evaluating Interface Designs&quot;) in Shneiderman (2014).</p>
+        <p> Write/draw a <strong>very</strong> <strong>brief evaluation report</strong> on 1 single page, summarizing the documented evaluation. Describe your evaluation approach in a schematic manner: include your test cases, participant pool, identified problems &amp; suggestions, etc. as well as your interpretations.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Upload your evaluation report</strong> to a folder <code>iteration-3/evaluation</code> on the GitHub <code>master</code> branch.</p>
 
-                <h3>Milestone Presentation III</h3>
-                <p>You will present your approach and findings, and demonstate your app (15 min presentation + 5 min discussion) during the next Interaction Prototyping session<em></em>. Prepare a <strong>short presentation</strong> on your approach based on the documentations/reports. Demonstrate the work in progress (i.e. your prototype) and formulate questions, you can discuss with the experts in the plenary.</p>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>iteration-3/presentation</code>on the GitHub <code>master</code> branch. Bring your smartphone for the presentation (we'll connect it to a screen), ensure that your <b>web app</b> is available in the (public) folder <code>v3</code> in the GitHub <code>gh-pages</code> branch.</p>
-                <h2 id="fourth">Fourth Iteration</h2>
-                <h3>Analyse: Reflections and aiming forward</h3>
-                <p>Analyse the results of Task 18: Qualitative Evaluation, work out positive points to keep working on and the negative points to be improved. Compare those Todos with the planned goal of your application, decide what are exactly to be impelmented/improved.  </p>
-                <h3>Design: Improvement and model the interaction</h3>
-                <p>Transfer Coopers interaction framework. Apply your definitions (including patterns/guidelines) above to the web technologies HTML5/CSS3/JS:</p>
-                <ol>
-                     <li>First, model the prototypical <strong>structure/hierarchy</strong> (in HTML), the <strong>data elements</strong> (as JS objects), the functional<strong> elements and input methods</strong> (e.g. HTML5 forms, jQuery UI components, ...).</li>
-                     <li>Second, model a rough prototypical sketch of <strong>key path</strong> scenarios (e.g. navigating the hierarchy) using jQuery.</li>
-                     <li>Third, design the <strong>visual appearance</strong> of your application in reusable and hierarchical CSS3 classes.</li>
-                 </ol>
-                <h3>Implementation: Build your hi-fi HTML Prototype</h3>
-                <p>This time, you'll seamlessly upgrade your HTML lo-fi model to a <b>hi-fi</b> HTML application:</p>
-                 <ol>
-                     <li>If possible, get information for the data elements dynamically, e.g. using APIs. <a href="http://www.programmableweb.com/">A list of web APIs is available on ProgrammableWeb</a>.</li>
-                     <li>Link the data elements to functional elements (i.e. make your application dynamic).</li>
-                      <li>Implement the interaction</li>
-                      <li>Implement the visual appearance to match your defined style (and the guidelines)</li>
-                  </ol>
-                <p>Finalize your prototype to be deliverable and testable.</p>
-                <p><strong>Clean up</strong> your application code (HTML, CSS, JS) and check your comments concerning their understandability for the upcoming code review.</p>
-                    <p class="alert alert-danger"><strong>Important: </strong>Ensure that you address all the <a href="#grading">grading critera described in the &quot;expectations, requirements and grading&quot; section above</a>.</p>
-                <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Store your web app</b> in a (public) folder <code>v4</code> in the GitHub <code>gh-pages</code> branch.</p>
+        <h3 class="numbered">Milestone Presentation III</h3>
+        <p>You will present your approach and findings, and demonstate your app (15 min presentation + 5 min discussion) during the next Interaction Prototyping session<em></em>. Prepare a <strong>short presentation</strong> on your approach based on the documentations/reports. Demonstrate the work in progress (i.e. your prototype) and formulate questions, you can discuss with the experts in the plenary.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload your presentation (<code>.ppt</code> or <code>.pdf</code>) to a folder <code>iteration-3/presentation</code>on the GitHub <code>master</code> branch. Bring your smartphone for the presentation (we'll connect it to a screen), ensure that your <b>web app</b> is available in the (public) folder <code>v3</code> in the GitHub <code>gh-pages</code> branch.</p>
                 
-                <h3>Experimental requirements: Hypotheses, test cases and metrics</h3>
-                <p>Read chapter six (&quot;Usability Testing&quot;) in Nielsen, J. (1993). <em>Usability Engineering</em>. Cambridge, Mass.: AP Professional. Retrieved from: <a href="http://proquest.tech.safaribooksonline.de/9780125184069">http://proquest.tech.safaribooksonline.de/9780125184069</a>.
-                    <p>Prepare requirements for a <strong>quantitative and summative evaluation</strong>.</p>
-                    <h4>Hypotheses</h4>
-                    <p>State goals and derive hypotheses that you want to test (e.g. &quot;the Hi-Fi prototype is rated better / provokes less errors / than the Lo-Fi prototype&quot;; &quot;completing task x with the prototype is faster than with off-the-shelf software&quot;, &quot;the prototype achives at least a rating of x&quot;, &quot;the performance for fulfilling the task will be x %&quot; etc.). The hypotheses should be in line with your <strong>functional and usability requirements</strong>. A good introduction on creating theories and deriving hypotheses is given in <a href="https://www.mendeley.com/research/discovering-statistics-using-spss-34/">Field (2009).</a></p>
-                    <h4>Test cases</h4>
-                    <p>Derive the <strong>test cases </strong>(tasks), from your use cases. Subjects will need to fulfill the test cases in order to reject/prove your hypotheses (some <a href="http://www.usability.gov/how-to-and-tools/methods/mobile-device-testing.html">hints on test scenarios are given on usability.gov</a>).</p>
-                    <h4>Metrics</h4>
-                    <p><a href="http://www.nngroup.com/articles/satisfaction-vs-performance-metrics/">Nielsen's (2012) post on <em>User Satisfaction vs. Performance Metrics</em></a> and refer to &quot;Performance Measurement&quot; (Nielsen, 1993, chapter 6.7). Define <em>objective</em> measures (obtained by logging parameters) such as reaction time, time to perform a task, number of errors, number of interaction steps, etc. Additionally, define <em>subjective</em> measures. Design or use an existing short questionnaire that uses scales to analyze the product (a <a href="http://www.usabilitynet.org/tools/r_questionnaire.htm">list of questionnaires can be found on usabilitynet.org</a>, another <a href="http://edutechwiki.unige.ch/en/Usability_and_user_experience_surveys">list of usability and user eyperience surveys is available from unige.ch</a>, further <a href="https://www.measuringu.com/topics/Questionnaires">questionnaires can be found on measuringu.com</a>). </p>
-                    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Summarize <strong>hypotheses</strong>, <strong>test cases </strong>and <strong>metrics</strong> in a brief report in the folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p>
-                    <h4>Experimental design: Plan and prepare a quantitative (summative) evaluation</h4>
-                    <p>Please operationalize your hypothesis using the metrics. Define <strong>quantitative criteria</strong> for assessing your prototype subjectively and objectively.</p>
-                    <p>Prepare the <strong>experimental setup</strong> for your summative evaluation.</p>
-                    <p> Design the <strong>experimental procedure</strong>.</p>
-                    <p>Setup the <strong>data acquisition</strong> (direct in-app logging, observation, record, ...).</p>
-                    <p><strong>Test</strong> the setup, procedure and data acquisition.</p>
-                    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload a photo of the <strong>setup</strong>, as well as a brief listing of the quantitative <strong>criteria</strong> and the <strong>procedure</strong> to a folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p>
+        <h2 id="fourth">Fourth Iteration</h2>
+        <h3 class="numbered">Analyse: Reflections and aiming forward</h3>
+        <p>Analyse the results of Task 18: Qualitative Evaluation, work out positive points to keep working on and the negative points to be improved. Compare those Todos with the planned goal of your application, decide what are exactly to be impelmented/improved.  </p>
+                
+        <h3>Design: Improvement and model the interaction</h3>
+        <p>Transfer Coopers interaction framework. Apply your definitions (including patterns/guidelines) above to the web technologies HTML5/CSS3/JS:</p>
+        <ol>
+            <li>First, model the prototypical <strong>structure/hierarchy</strong> (in HTML), the <strong>data elements</strong> (as JS objects), the functional<strong> elements and input methods</strong> (e.g. HTML5 forms, jQuery UI components, ...).</li>
+            <li>Second, model a rough prototypical sketch of <strong>key path</strong> scenarios (e.g. navigating the hierarchy) using jQuery.</li>
+            <li>Third, design the <strong>visual appearance</strong> of your application in reusable and hierarchical CSS3 classes.</li>
+        </ol>
+                
+        <h3 class="numbered">Implementation: Build your hi-fi HTML Prototype</h3>
+        <p>This time, you'll seamlessly upgrade your HTML lo-fi model to a <b>hi-fi</b> HTML application:</p>
+         <ol>
+             <li>If possible, get information for the data elements dynamically, e.g. using APIs. <a href="http://www.programmableweb.com/">A list of web APIs is available on ProgrammableWeb</a>.</li>
+             <li>Link the data elements to functional elements (i.e. make your application dynamic).</li>
+              <li>Implement the interaction</li>
+              <li>Implement the visual appearance to match your defined style (and the guidelines)</li>
+          </ol>
+        <p>Finalize your prototype to be deliverable and testable.</p>
+        <p><strong>Clean up</strong> your application code (HTML, CSS, JS) and check your comments concerning their understandability for the upcoming code review.</p>
+            <p class="alert alert-danger"><strong>Important: </strong>Ensure that you address all the <a href="#grading">grading critera described in the &quot;expectations, requirements and grading&quot; section above</a>.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Store your web app</b> in a (public) folder <code>v4</code> in the GitHub <code>gh-pages</code> branch.</p>
+                
+        <h3 class="numbered">Experimental requirements: Hypotheses, test cases and metrics</h3>
+        <p>Read chapter six (&quot;Usability Testing&quot;) in Nielsen, J. (1993). <em>Usability Engineering</em>. Cambridge, Mass.: AP Professional. Retrieved from: <a href="http://proquest.tech.safaribooksonline.de/9780125184069">http://proquest.tech.safaribooksonline.de/9780125184069</a>.
+        <p>Prepare requirements for a <strong>quantitative and summative evaluation</strong>.</p>
+        <h4>Hypotheses</h4>
+        <p>State goals and derive hypotheses that you want to test (e.g. &quot;the Hi-Fi prototype is rated better / provokes less errors / than the Lo-Fi prototype&quot;; &quot;completing task x with the prototype is faster than with off-the-shelf software&quot;, &quot;the prototype achives at least a rating of x&quot;, &quot;the performance for fulfilling the task will be x %&quot; etc.). The hypotheses should be in line with your <strong>functional and usability requirements</strong>. A good introduction on creating theories and deriving hypotheses is given in <a href="https://www.mendeley.com/research/discovering-statistics-using-spss-34/">Field (2009).</a></p>
+            <h4>Test cases</h4>
+            <p>Derive the <strong>test cases </strong>(tasks), from your use cases. Subjects will need to fulfill the test cases in order to reject/prove your hypotheses (some <a href="http://www.usability.gov/how-to-and-tools/methods/mobile-device-testing.html">hints on test scenarios are given on usability.gov</a>).</p>
+            <h4>Metrics</h4>
+            <p><a href="http://www.nngroup.com/articles/satisfaction-vs-performance-metrics/">Nielsen's (2012) post on <em>User Satisfaction vs. Performance Metrics</em></a> and refer to &quot;Performance Measurement&quot; (Nielsen, 1993, chapter 6.7). Define <em>objective</em> measures (obtained by logging parameters) such as reaction time, time to perform a task, number of errors, number of interaction steps, etc. Additionally, define <em>subjective</em> measures. Design or use an existing short questionnaire that uses scales to analyze the product (a <a href="http://www.usabilitynet.org/tools/r_questionnaire.htm">list of questionnaires can be found on usabilitynet.org</a>, another <a href="http://edutechwiki.unige.ch/en/Usability_and_user_experience_surveys">list of usability and user eyperience surveys is available from unige.ch</a>, further <a href="https://www.measuringu.com/topics/Questionnaires">questionnaires can be found on measuringu.com</a>). </p>
+            <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Summarize <strong>hypotheses</strong>, <strong>test cases </strong>and <strong>metrics</strong> in a brief report in the folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p>
+            <h4>Experimental design: Plan and prepare a quantitative (summative) evaluation</h4>
+            <p>Please operationalize your hypothesis using the metrics. Define <strong>quantitative criteria</strong> for assessing your prototype subjectively and objectively.</p>
+            <p>Prepare the <strong>experimental setup</strong> for your summative evaluation.</p>
+            <p> Design the <strong>experimental procedure</strong>.</p>
+            <p>Setup the <strong>data acquisition</strong> (direct in-app logging, observation, record, ...).</p>
+            <p><strong>Test</strong> the setup, procedure and data acquisition.</p>
+            <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> Upload a photo of the <strong>setup</strong>, as well as a brief listing of the quantitative <strong>criteria</strong> and the <strong>procedure</strong> to a folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p>
                     
                     <!--<h3>Implementation: Finalize the prototype for the evaluation</h3>
                     <p>Finalize your prototype <strong>to fit your experimental  requirements and experimental design</strong> respectively. </p>
                     <p><strong>Clean up</strong> your application code (HTML, CSS, JS) and check your comments concerning their understandability for the upcoming code review.</p>
                     <p class="alert alert-danger"><strong>Important: </strong>Ensure that you address all the <a href="#grading">grading critera described in the &quot;expectations, requirements and grading&quot; section above</a>.</p>
                     <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <b>Store your  web app</b> in a (public) folder <code>v4</code> in the GitHub <code>gh-pages</code> branch.</p>-->
-                    <h3>Milestone Presentation IV</h3>
-                    <p>Prepare a short presentation (15 min presentation + 5 min discussion) on your approach, which includes the <strong>demostration of the final prototype</strong> and <strong>presentation of experiment design</strong>.</p>
-                    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i><b> Bring the app, measuring equipment, questionnaires, etc. to the lecture. </b>Be prepared to discuss your app and evaluation methods!</p>
+        <h3 class="numbered">Milestone Presentation IV</h3>
+        <p>Prepare a short presentation (15 min presentation + 5 min discussion) on your approach, which includes the <strong>demostration of the final prototype</strong> and <strong>presentation of experiment design</strong>.</p>
+        <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i><b> Bring the app, measuring equipment, questionnaires, etc. to the lecture. </b>Be prepared to discuss your app and evaluation methods!</p>
                     
-                    <p class="alert alert-danger"><i class="fa fa-info"></i><strong>  Important Deadline: After the presentation, you still have 3 days (until 14.07.17 at 23:59:59) to fine-tune and finalize your prototype based on the feedbacks. Afterwards, your GitHub repository will be freezed, and no change will be taken into the final evaluation</strong>. Tips: don't be demotivated by the imperfection of your prototype, it is still a prototype at this freezing point. For all team members, please move on and be consentrated on the final evaluation.</p>
-	   	    <h2 id="fifth">Final Evaluation</h2>
-	   	    <h3> Evaluation </h3>
-                    <h4>Evaluation: Data collection for the quantitative evaluation</h4>
-                    <p>Collect data from 7 to 10 persons depicting your target group (relatives, friends, fellow students, etc.). Store the acquired data in a suitable manner.</p>
-                    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i><b> Upload the data set </b>to a folder <code>final_evaluation/data</code> in the GitHub <code>master</code> branch.</p>
+        <p class="alert alert-danger"><i class="fa fa-info"></i><strong>  Important Deadline: After the presentation, you still have 3 days (until 14.07.17 at 23:59:59) to fine-tune and finalize your prototype based on the feedbacks. Afterwards, your GitHub repository will be freezed, and no change will be taken into the final evaluation</strong>. Tips: don't be demotivated by the imperfection of your prototype, it is still a prototype at this freezing point. For all team members, please move on and be consentrated on the final evaluation.</p>
+	   	    
+
+	   	<h2 id="fifth">Final Evaluation</h2>
+	   	<h3 class="numbered"> Evaluation </h3>
+            <h4>Evaluation: Data collection for the quantitative evaluation</h4>
+            <p>Collect data from 7 to 10 persons depicting your target group (relatives, friends, fellow students, etc.). Store the acquired data in a suitable manner.</p>
+            <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i><b> Upload the data set </b>to a folder <code>final_evaluation/data</code> in the GitHub <code>master</code> branch.</p>
 
 
-                    <h4>Analysis: Statistical  analysis of the quantitative evaluation</h4>
-                    <p>Please format your data for analysis in the statistical tool of your choice (Excel/JMP/R/SPSS). SPSS is available on computers located in the ergonomics department (LfE). To create an LfE account, required to use the LfE computers, contact the LfE Technical Support Team.</p>
+            <h4>Analysis: Statistical  analysis of the quantitative evaluation</h4>
+            <p>Please format your data for analysis in the statistical tool of your choice (Excel/JMP/R/SPSS). SPSS is available on computers located in the ergonomics department (LfE). To create an LfE account, required to use the LfE computers, contact the LfE Technical Support Team.</p>
 		    <p> Perform a statistical analysis and reject or accept your hypothesis (a good overview on statistical analyses is given in <a href="https://www.mendeley.com/research/discovering-statistics-using-spss-34/">Field, 2009</a>). Make sure you check the assumptions of the tests before using them. Express the results in the best way for the audience of your final poster presentation (see below). Use <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>-style diagrams (or tables) for this purpose and <strong>interpret</strong> your results with regards to your hypotheses and functional as well as usability requirements. Include your results' implications for your design.</p>
-                    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i><b> Upload the analysis  </b>in a folder <code>final_evaluation/analysis</code> in the GitHub <code>master</code> branch.</p>
+            <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i><b> Upload the analysis  </b>in a folder <code>final_evaluation/analysis</code> in the GitHub <code>master</code> branch.</p>
 
-	    
-                    <h3>Final Poster Presentation</h3>
-                    <p>Please prepare a poster (DIN A1) for the final presentation, which should include the <strong>whole methodological prototyping process </strong>that you used<strong>.</strong> Design the posters for<strong> new stakeholders </strong>(i.e. usability experts, evaluators, professors, ...) that do not know your methodological process yet. Focus on the <strong>iterative user centered design process</strong>. It is important to motivate the <em>evalation methods</em>, the<em> results</em>, as well as <em>design improvements</em>. Provide both an overview (all the methodological steps) and some highlights (details on chosen techniques/tools, important results, well-chosen design improvements). </p>
-                    <p>Your poster should be self-explanatory and thus contain: </p>
+        <h3 class="numbered">Final Poster Presentation</h3>
+        <p>Please prepare a poster (DIN A1) for the final presentation, which should include the <strong>whole methodological prototyping process </strong>that you used<strong>.</strong> Design the posters for<strong> new stakeholders </strong>(i.e. usability experts, evaluators, professors, ...) that do not know your methodological process yet. Focus on the <strong>iterative user centered design process</strong>. It is important to motivate the <em>evalation methods</em>, the<em> results</em>, as well as <em>design improvements</em>. Provide both an overview (all the methodological steps) and some highlights (details on chosen techniques/tools, important results, well-chosen design improvements). </p>
+            <p>Your poster should be self-explanatory and thus contain: </p>
+            <ul>
+                <li><strong>motivations</strong> both for the application and the iterations (<em>users</em>, <em>goals</em>, <em>requirements</em>, ...)</li>
+                <li> an <strong>overview</strong> of your <strong>process</strong> <strong>iterations </strong>(used<em> methods</em>,<em> prototyping tools</em><strong>, </strong><em>evaluations, final application views</em>)</li>
+                <li>well chosen <strong>exemplary  details </strong>regarding <em>evaluation results</em> and<em> design  improvements</em></li>
+                <li><strong>discussions/conclusions</strong> of the <em>iterations</em></li>
+                <li>a <strong>hyperlink</strong> to the final web application (e.g. in form of a QR-code)</li>
+            </ul>
+            <p>During the poster <strong>presentation</strong> (exactly <strong>15 minutes!</strong>) you will give a short explanation of your overall work (<strong>10 minutes</strong>) and <strong>demonstrate</strong> the mobile application (<strong>5 minutes</strong>). Ensure that each group member presents both methodological steps (poster) <strong>and</strong> prototype details (smartphone). Be prepared to answer additional <strong>questions</strong> afterwards (ca. 5 minutes). </p>
+            <p class="alert alert-danger"><strong>Important: </strong>Ensure that you address all the <strong>methodological</strong> <a href="#grading">grading critera described in the &quot;expectations, requirements and grading&quot; section above</a>.</p>
+
+            <div class="row hidden-print">
+            	<div class="col-xs-12 col-md-8">                	
+            		<p>Apply the user centered design process to your poster: Create several &quot;paper prototype&quot; drafts of the poster, and do a quick &quot;usability evaluation&quot; of your poster (<a href="http://colinpurrington.com/tips/poster-design">the process is described under &quot;motivational advice&quot; by Purrington</a>). Assess (e.g. in a &quot;heuristic evaluation&quot;) criteria like: </p>
+                    	<ul>
+                    		<li>Content Depth (both overview and details are shown)</li>
+                    		<li>Content Relevance (good selection of important details of process steps)</li>
+                    		<li>Scientific level (logos, ethos, &amp; pathos) and scientific style (e.g. references and captions in <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>)</li>
+                    		<li>Visual Design (<a href="https://www.mendeley.com/research/presentation-zen-design-simple-design-principles-techniques-enhance-presentations-voices-matter/">Reynolds, 2010</a>)
+                    			<ul>
+                    				<li>signal/noise ratio</li>
+                    				<li>picture superiority effect</li>
+                    				<li>empty space</li>
+                    				<li>contrast</li>
+                    				<li>repetition</li>
+                    				<li>alignment</li>
+                    				<li>proximity</li>
+                    			</ul>
+                    		</li>
+                    		<li>Visual Clarity (readability, legibility, ...)</li>
+                    		<li>Visual Simplicity</li>
+                    	</ul>
+                    	<p>Apply the <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a> guidelines for formatting figures, tables, and statistics (<a href="http://www.lfe.mw.tum.de/lehre/studienarbeiten/styleguide-fuer-studienarbeiten/">a summarized styleguide  can be found on the institute's website</a>). Use the <a href="https://www.ieee.org/documents/ieeecitationref.pdf"> IEEE citation</a> style to format your in-text citation and references. There are guidelines/hints on how to make a good poster (e.g. <a href="http://guides.nyu.edu/content.php?pid=174875&sid=1471879">NYU Research Poster</a>, <a href="http://www.personal.psu.edu/drs18/postershow/">PSU Poster Fair</a>, <a href="http://www2.napier.ac.uk/gus/writing_presenting/academic_posters.html">Napier Academic Posters</a>, ...). There are also samples of good posters (e.g. <a href="https://www.utexas.edu/ugs/our/poster/samples">UT Poster Samples</a>). But keep in mind, that you're going to present an iterative process, so you need to <strong>transform</strong> the common (<a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>) structure (&quot;introduction&quot;, &quot;method&quot;, &quot;results&quot;, &quot;discussion&quot;, &quot;conclusion&quot;). <a href="https://talirsux.wordpress.com/2010/07/08/10-ux-posters/">Good examples of user centered design / user experience posters are listed by Shoham (2010)</a> (despite those are showing processes rather than results). Altogether, you need to combine the <strong>scientific</strong> and the <strong>iterative</strong> design process to present your methods and results. </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                	<div class="thumbnail">
+                	<img src="images/poster_layout.png" alt="Layout of the Poster">
+                		<div class="caption">
+                			<h4>Poster Layout</h4>
+                			<p>Please stick to the following layout of your poster. The red area can be used as you wish.The gray lines and arrows are are only for layout purposes and shall <strong>not</strong> be on the final poster.</p>
+                		</div>
+                	</div>
+                </div>
+            </div>
+
+            <div class="row visible-print-block">
+            	<div class="col-xs-8">                	
+            		<p>Apply the user centered design process to your poster: Create several &quot;paper prototype&quot; drafts of the poster, and do a quick &quot;usability evaluation&quot; of your poster (<a href="http://colinpurrington.com/tips/poster-design">the process is described under &quot;motivational advice&quot; by Purrington</a>). Assess (e.g. in a &quot;heuristic evaluation&quot;) criteria like: </p>
                     <ul>
-                        <li><strong>motivations</strong> both for the application and the iterations (<em>users</em>, <em>goals</em>, <em>requirements</em>, ...)</li>
-                        <li> an <strong>overview</strong> of your <strong>process</strong> <strong>iterations </strong>(used<em> methods</em>,<em> prototyping tools</em><strong>, </strong><em>evaluations, final application views</em>)</li>
-                        <li>well chosen <strong>exemplary  details </strong>regarding <em>evaluation results</em> and<em> design  improvements</em></li>
-                        <li><strong>discussions/conclusions</strong> of the <em>iterations</em></li>
-                        <li>a <strong>hyperlink</strong> to the final web application (e.g. in form of a QR-code)</li>
+                    	<li>Content Depth (both overview and details are shown)</li>
+                    	<li>Content Relevance (good selection of important details of process steps)</li>
+                    	<li>Scientific level (logos, ethos, &amp; pathos) and scientific style (e.g. references and captions in <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>)</li>
+                    	<li>Visual Design (<a href="https://www.mendeley.com/research/presentation-zen-design-simple-design-principles-techniques-enhance-presentations-voices-matter/">Reynolds, 2010</a>)
+                    		<ul>
+                    			<li>signal/noise ratio</li>
+                    			<li>picture superiority effect</li>
+                    			<li>empty space</li>
+                    			<li>contrast</li>
+                    			<li>repetition</li>
+                    			<li>alignment</li>
+                    			<li>proximity</li>
+                    		</ul>
+                    	</li>
+                    	<li>Visual Clarity (readability, legibility, ...)</li>
+                    	<li>Visual Simplicity</li>
                     </ul>
-                    <p>During the poster <strong>presentation</strong> (exactly <strong>15 minutes!</strong>) you will give a short explanation of your overall work (<strong>10 minutes</strong>) and <strong>demonstrate</strong> the mobile application (<strong>5 minutes</strong>). Ensure that each group member presents both methodological steps (poster) <strong>and</strong> prototype details (smartphone). Be prepared to answer additional <strong>questions</strong> afterwards (ca. 5 minutes). </p>
-                    <p class="alert alert-danger"><strong>Important: </strong>Ensure that you address all the <strong>methodological</strong> <a href="#grading">grading critera described in the &quot;expectations, requirements and grading&quot; section above</a>.</p>
+                    <p>Apply the <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a> guidelines for formatting references, figures, tables, and statistics (<a href="http://www.lfe.mw.tum.de/lehre/studienarbeiten/styleguide-fuer-studienarbeiten/">a summarized styleguide  can be found on the institute's website</a>). There are guidelines/hints on how to make a good poster (e.g. <a href="http://guides.nyu.edu/content.php?pid=174875&sid=1471879">NYU Research Poster</a>, <a href="http://www.personal.psu.edu/drs18/postershow/">PSU Poster Fair</a>, <a href="http://www2.napier.ac.uk/gus/writing_presenting/academic_posters.html">Napier Academic Posters</a>, ...). There are also samples of good posters (e.g. <a href="https://www.utexas.edu/ugs/our/poster/samples">UT Poster Samples</a>). But keep in mind, that you're going to present an iterative process, so you need to <strong>transform</strong> the common (<a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>) structure (&quot;introduction&quot;, &quot;method&quot;, &quot;results&quot;, &quot;discussion&quot;, &quot;conclusion&quot;). <a href="https://talirsux.wordpress.com/2010/07/08/10-ux-posters/">Good examples of user centered design / user experience posters are listed by Shoham (2010)</a> (despite those are showing processes rather than results). Altogether, you need to combine the <strong>scientific</strong> and the <strong>iterative</strong> design process to present your methods and results. </p>
+                </div>
+                <div class="col-xs-4">
+                	<div class="thumbnail">
+                	<img src="images/poster_layout.jpg" alt="Layout of the Poster">
+                		<div class="caption">
+                			<h4>Poster Layout</h4>
+                			<p>Please stick to the following layout of your poster. The red area can be used as you wish. The gray lines and arrows are only for layout purposes and shall <strong>not</strong> be on the final poster.</p>
+               			</div>
+               		</div>
+               	</div>
+            </div>
 
-                    <div class="row hidden-print">
-                    	<div class="col-xs-12 col-md-8">                	
-                    		<p>Apply the user centered design process to your poster: Create several &quot;paper prototype&quot; drafts of the poster, and do a quick &quot;usability evaluation&quot; of your poster (<a href="http://colinpurrington.com/tips/poster-design">the process is described under &quot;motivational advice&quot; by Purrington</a>). Assess (e.g. in a &quot;heuristic evaluation&quot;) criteria like: </p>
-                    		<ul>
-                    			<li>Content Depth (both overview and details are shown)</li>
-                    			<li>Content Relevance (good selection of important details of process steps)</li>
-                    			<li>Scientific level (logos, ethos, &amp; pathos) and scientific style (e.g. references and captions in <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>)</li>
-                    			<li>Visual Design (<a href="https://www.mendeley.com/research/presentation-zen-design-simple-design-principles-techniques-enhance-presentations-voices-matter/">Reynolds, 2010</a>)
-                    				<ul>
-                    					<li>signal/noise ratio</li>
-                    					<li>picture superiority effect</li>
-                    					<li>empty space</li>
-                    					<li>contrast</li>
-                    					<li>repetition</li>
-                    					<li>alignment</li>
-                    					<li>proximity</li>
-                    				</ul>
-                    			</li>
-                    			<li>Visual Clarity (readability, legibility, ...)</li>
-                    			<li>Visual Simplicity</li>
-                    		</ul>
-                    		<p>Apply the <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a> guidelines for formatting figures, tables, and statistics (<a href="http://www.lfe.mw.tum.de/lehre/studienarbeiten/styleguide-fuer-studienarbeiten/">a summarized styleguide  can be found on the institute's website</a>). Use the <a href="https://www.ieee.org/documents/ieeecitationref.pdf"> IEEE citation</a> style to format your in-text citation and references. There are guidelines/hints on how to make a good poster (e.g. <a href="http://guides.nyu.edu/content.php?pid=174875&sid=1471879">NYU Research Poster</a>, <a href="http://www.personal.psu.edu/drs18/postershow/">PSU Poster Fair</a>, <a href="http://www2.napier.ac.uk/gus/writing_presenting/academic_posters.html">Napier Academic Posters</a>, ...). There are also samples of good posters (e.g. <a href="https://www.utexas.edu/ugs/our/poster/samples">UT Poster Samples</a>). But keep in mind, that you're going to present an iterative process, so you need to <strong>transform</strong> the common (<a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>) structure (&quot;introduction&quot;, &quot;method&quot;, &quot;results&quot;, &quot;discussion&quot;, &quot;conclusion&quot;). <a href="https://talirsux.wordpress.com/2010/07/08/10-ux-posters/">Good examples of user centered design / user experience posters are listed by Shoham (2010)</a> (despite those are showing processes rather than results). Altogether, you need to combine the <strong>scientific</strong> and the <strong>iterative</strong> design process to present your methods and results. </p>
-                    	</div>
-                    	<div class="col-xs-12 col-md-4">
-                    		<div class="thumbnail">
-                    		<img src="images/poster_layout.png" alt="Layout of the Poster">
-                    			<div class="caption">
-                    				<h4>Poster Layout</h4>
-                    				<p>Please stick to the following layout of your poster. The red area can be used as you wish.The gray lines and arrows are are only for layout purposes and shall <strong>not</strong> be on the final poster.</p>
-                    			</div>
-                    		</div>
-                    	</div>
-                    </div>
-
-                    <div class="row visible-print-block">
-                    	<div class="col-xs-8">                	
-                    		<p>Apply the user centered design process to your poster: Create several &quot;paper prototype&quot; drafts of the poster, and do a quick &quot;usability evaluation&quot; of your poster (<a href="http://colinpurrington.com/tips/poster-design">the process is described under &quot;motivational advice&quot; by Purrington</a>). Assess (e.g. in a &quot;heuristic evaluation&quot;) criteria like: </p>
-                    		<ul>
-                    			<li>Content Depth (both overview and details are shown)</li>
-                    			<li>Content Relevance (good selection of important details of process steps)</li>
-                    			<li>Scientific level (logos, ethos, &amp; pathos) and scientific style (e.g. references and captions in <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>)</li>
-                    			<li>Visual Design (<a href="https://www.mendeley.com/research/presentation-zen-design-simple-design-principles-techniques-enhance-presentations-voices-matter/">Reynolds, 2010</a>)
-                    				<ul>
-                    					<li>signal/noise ratio</li>
-                    					<li>picture superiority effect</li>
-                    					<li>empty space</li>
-                    					<li>contrast</li>
-                    					<li>repetition</li>
-                    					<li>alignment</li>
-                    					<li>proximity</li>
-                    				</ul>
-                    			</li>
-                    			<li>Visual Clarity (readability, legibility, ...)</li>
-                    			<li>Visual Simplicity</li>
-                    		</ul>
-                    		<p>Apply the <a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a> guidelines for formatting references, figures, tables, and statistics (<a href="http://www.lfe.mw.tum.de/lehre/studienarbeiten/styleguide-fuer-studienarbeiten/">a summarized styleguide  can be found on the institute's website</a>). There are guidelines/hints on how to make a good poster (e.g. <a href="http://guides.nyu.edu/content.php?pid=174875&sid=1471879">NYU Research Poster</a>, <a href="http://www.personal.psu.edu/drs18/postershow/">PSU Poster Fair</a>, <a href="http://www2.napier.ac.uk/gus/writing_presenting/academic_posters.html">Napier Academic Posters</a>, ...). There are also samples of good posters (e.g. <a href="https://www.utexas.edu/ugs/our/poster/samples">UT Poster Samples</a>). But keep in mind, that you're going to present an iterative process, so you need to <strong>transform</strong> the common (<a href="https://www.mendeley.com/catalog/publication-manual-american-psychological-association-book/">APA6</a>) structure (&quot;introduction&quot;, &quot;method&quot;, &quot;results&quot;, &quot;discussion&quot;, &quot;conclusion&quot;). <a href="https://talirsux.wordpress.com/2010/07/08/10-ux-posters/">Good examples of user centered design / user experience posters are listed by Shoham (2010)</a> (despite those are showing processes rather than results). Altogether, you need to combine the <strong>scientific</strong> and the <strong>iterative</strong> design process to present your methods and results. </p>
-                    	</div>
-                    	<div class="col-xs-4">
-                    		<div class="thumbnail">
-                    		<img src="images/poster_layout.jpg" alt="Layout of the Poster">
-                    			<div class="caption">
-                    				<h4>Poster Layout</h4>
-                    				<p>Please stick to the following layout of your poster. The red area can be used as you wish. The gray lines and arrows are only for layout purposes and shall <strong>not</strong> be on the final poster.</p>
-                    			</div>
-                    		</div>
-                    	</div>
-                    </div>
-
-                    <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Print</strong> your poster in DIN A1 (<a href="https://www.lrz.de/services/peripherie/posterdruck/ ">a printing service is offered by the LRZ</a>). <strong>Upload</strong> your poster (<code>.pdf</code>) to a folder <code>iteration-5/poster</code>on the GitHub <code>master</code> branch. Bring your smartphone for the presentation ensure that the latest version of your <b>web app</b> is available in the (public) folder <code>v5</code>in the GitHub <code>gh-pages</code> branch. It might be helpful to <strong>print</strong> out the documents/reports created during the <em>analysis</em>, <em>design</em> and <em>evaluation</em> phases (and to file them to a folder) as <em>supplementary material</em> for questions emerging during your presentation.</p>
+            <p class="well well-sm"><i class="fa fa-arrow-circle-right"></i> <strong>Print</strong> your poster in DIN A1 (<a href="https://www.lrz.de/services/peripherie/posterdruck/ ">a printing service is offered by the LRZ</a>). <strong>Upload</strong> your poster (<code>.pdf</code>) to a folder <code>iteration-5/poster</code>on the GitHub <code>master</code> branch. Bring your smartphone for the presentation ensure that the latest version of your <b>web app</b> is available in the (public) folder <code>v5</code>in the GitHub <code>gh-pages</code> branch. It might be helpful to <strong>print</strong> out the documents/reports created during the <em>analysis</em>, <em>design</em> and <em>evaluation</em> phases (and to file them to a folder) as <em>supplementary material</em> for questions emerging during your presentation.</p>
 
     </div>
 </body>
