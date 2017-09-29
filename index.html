@@ -87,6 +87,20 @@
         .ip {
             color: gray;
         }
+
+        .videoWrapper {
+        	position: relative;
+        	padding-bottom: 56.25%; /* 16:9 */
+        	padding-top: 25px;
+        	height: 0;
+        }
+        .videoWrapper iframe {
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        }
     </style>
     <script>
         var year = (new Date()).getFullYear();
@@ -214,6 +228,7 @@
         <h3 class="plain">Join Mendeley and the Interaction Prototyping group</h3>
         <p>The literature presented in class and used in these exercises is available in the Mendeley <a href="https://www.mendeley.com/groups/6954121/interaction-prototyping/">Interaction Prototyping group</a>, which you should join. There is a <a href="https://www.mendeley.com/download-mendeley-desktop">desktop client </a>of Mendeley. </p>
         <p class="well well-sm"><img alt="TUM" src="images/tum.svg" style="height: 20px; margin-right: 10px;"> Many of the papers and books are available online (inside the university network). Please set up your <a href="https://www.ub.tum.de/zugang-zu-ejournals">TUM university library's proxy</a>.</p>
+        
         <h3>Join GitHub and your team repository</h3>
         <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
         <ol>
@@ -223,6 +238,11 @@
             <li>Download and install the <a href="https://windows.github.com/">Windows</a> or <a href="https://mac.github.com/">Mac</a> client.</li>
             <li>Clone the <code>gh-pages</code> branch of your repository. Find instructions on this below.</li>
         </ol>
+
+        <div class="videoWrapper">
+    	<!-- Copy & Pasted from YouTube -->
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>        
 
         <h4>GitHub benefits</h4>
         <p>GitHub is an online cloud service (online storage) which simplifies collaboration in IT projects. It is based on the software Git. The combination provides tools for solving conflicted versions of a file, merging different edits in the same document and backing up your project.</p>
